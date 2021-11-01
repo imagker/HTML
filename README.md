@@ -1,3 +1,3 @@
 # HTML
 HTML
-stuyding bout HTML in w3cschools.com
+stuyding HTML by w3cschools.com
