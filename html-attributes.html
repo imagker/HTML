@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML attributes</title>
+</head>
+<body>
+  <header>
+    <a href="https://www.w3schools.com/html/html_attributes.asp">
+      w3schools HTML-attrib
+    </a>
+    <h1>HTML attributes</h1>
+    HTML attributes provide additional information about HTML elem.
+  </header>
+  <br>
+  <main>
+    <section>
+      <h2>HTML attributes</h2>
+      <ul>
+        <li>all HTML elem can hav <strong>attributes</strong></li>
+        <li>attributes provide <strong>additional</strong> information about elements</li>
+        <li>attributes are always specified in the <strong>start tag</strong></li>
+        <li>attributes usually come in name/vaule pairs like: <strong>name="value"</strong></li>
+      </ul>
+    </section>
+    <br>
+    <section>
+      <h2>href attribute</h2>
+      <p>
+        the &lt;a&gt;(anchor) tag defines a hyperlink. the <span style="color:red; background-color:rgb(238, 237, 237);">href</span>(hypertext reference) attributes specifies the URL of the page the link goes to.
+      </p>
+    </section>
+    <br>
+    <section> 
+      <h2>the src attrib</h2>
+      <p>
+        the &lt;img&gt; tag is used to embed image in an HTML page. the <span style="color:red; background-color:rgb(238, 237, 237);">src</span>(source attribute) attributes specifies the path to image to be displapyed:
+        <br><br>
+        &lt;img src="img_chicken.jpg"&gt;
+        <br><br>
+          <article>
+          there are two ways to specify the URL in the <span style="color:red; background-color:rgb(238, 237, 237);">src</span> attribute
+          <br><br>
+            <ol type="I">
+              <li style="font-weight: bold;">absolute URL</li>
+              <p>
+                Links to an external image that is hosted on another website. 
+                <br>
+                Ex) src="https://www.w3schools.com/images/img_chicken.jpg"
+                <br><br>
+                <strong>Notes:</strong> External images might be under copyright. also you cant contorl external images; it can suddenly be removed or changed.
+              </p>
+              <li style="font-weight: bold;">relative URL</li>
+              <p>
+                Links to an image that is hosted within the website. Here, the URL does not include the domain name. If the URL begins without slash it will be relative to the current page.
+                <br>
+                Ex) src="img_chicken.jpg"
+                <br>
+                If the URL begins with a slash, it will be relative to the domain.
+                <br>
+                Ex)src="/images/img_chicken.jpg"
+                <br><br>
+                <strong>Tip:</strong> It is almost always best to use realtive URLs. they woll not break if you cange domain.
+              </p>
+            </ol>
+          </article>
+      </p>
+    </section>
+    <br>
+    <section>
+      <h2>the width and height attributes</h2>
+      <p>
+        the <span style="color:red; background-color:rgb(238, 237, 237);">img</span> tag should also contain the <span style="color:red; background-color:rgb(238, 237, 237);">width</span> and <span style="color:red; background-color:rgb(238, 237, 237);">height</span> attributes, which specifies the size of the image(in pixels,%):
+      </p>
+    </section>
+    <br>
+    <section>
+      <h2>the alt attribute</h2>
+      <pre style="font-family:malgun gothic">
+<small>this paragraph is written in &lt;pre&gt; tag</small>
+        
+the required <span style="color:red; background-color:rgb(238, 237, 237);">alt</span> attribute for the &lt;img&gt; tag specifies an alternate text for an image.
+
+&lt;img src="gamja_jpg" alt="this si gamja"&gt;
+      </pre>
+    </section>
+    <br>
+    <section>
+      <h2>the style attribute</h2>
+      <p>
+        the <span style="color:red; background-color:rgb(238, 237, 237);">style</span> attribute is used to add style to an elem, such as color, font, size, and more. 
+        <br><br>
+        &lt;p style="color:red";>yo chicken&lt;/p&gt;
+      </p>
+    </section>
+    <br>
+    <section> 
+      <h2>the lang attribute</h2>
+      <p>
+        you should always include the <span style="color:red; background-color:rgb(238, 237, 237);">lang</span> attribute inside the <span style="color:red; background-color:rgb(238, 237, 237);">html</span> tag, to declare the lang of the Web page. this is meant to assist search engines and browsers.
+        <br><br>
+        country codes can also be added to the lang code in the <span style="color:red; background-color:rgb(238, 237, 237);">lang</span> attribute.
+        <br><br>
+        &lt;html lang="en"&gt;  &lt;html lang="en-US"&gt;
+      </p>
+    </section>
+    <br>
+    <section>
+      <h2>title attribute</h2>
+      <p title="title attribute^^">
+        the <span style="color:red; background-color:rgb(238, 237, 237);">title</span> attribute defines some extra information about an element.
+        the value of the title attribute will be displayed as a tooltip when you mouse over the elem.
+        <br><br>
+        &lt;p title="i'm a tooltip"&gt;this is a paragraph&lt;p&gt;
+      </p>
+    </section> 
+    <br>
+    <section>
+      <article>
+        <h3>we suggest: always use lowercase attributes</h3>
+        <p>
+          the HTML standard does not require lowercase attributes names. however W3C <strong>recommends</strong> lowercase attributes in HTML, and <strong>demands</strong> lowercase attributes for stricter doc types like XHTML
+        </p>
+      </article>
+      <br>
+      <section>
+        <h3 title='use &apos;apos&apos;'>we suggest: always quote attribute values</h3>
+        <p title="use &quot;quot&quot;">
+          the HTML standard does not require quotes aroud attribute valuse. however, W3C <strong>recommends</strong> quotes in HTML, and <strong>demands</strong> quotes for stricter doc types like XHTML
+        </p>
+      </article>
+    </section>
+  </main>
+  <br>
+  <footer>
+    <h2>chap. summary</h2>
+    <ul>
+      <li>all HTML elem can have <span style="color: red;">attributes</span></li>
+      <li>the <span style="color:red">href</span> attributes of <span style="color:red">&lt;a&gt;</span> specifies the URL of the page the link goes to</li>
+      <li>the <span style="color:red">src</span> attribute of <span style="color:red">&lt;img&gt;</span> specfies the path to the img to be displayed</li>
+      <li>the <span style="color:red">width</span> and <span style="color:red">height</span> attrib of <span style="color:red">img</span> provide size info for img</li>
+      <li>the <span style="color:red">alt</span> attrib of <span style="color:red">img</span> provides an alternative text for an img</li>
+      <li>the <span style="color:red">style</span> attrib is used to add style to an elem, such as color, font, size, and more</li>
+      <li>the <span style="color:red">lang</span> attrib of the <span style="color:red">html</span> tag declares the lang of the web</li>
+      <li>the <span style="color:red"> attrib</span> defines some extra info about an elem</li>
+      <!-- 단어 건너뛰기는 shif + ctrl  -->
+    </ul>
+    <h2>HTML attribute REF</h2>
+    <p>
+      A complete list of all attributes for each HTML element, is listed in our: <a href="https://www.w3schools.com/tags/ref_attributes.asp"> HTML Attribute Reference.</a>
+    </p>
+  </footer>
+</body>
+</html>
