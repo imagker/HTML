@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTMl RGB and RGBA colors</title>
+</head>
+<style>
+
+  .ColorBoxCon{
+    display: flex;
+    justify-content: center;
+  }
+  #ColorBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 255, 255);
+    width: 50%;
+    height: 5rem;
+
+  }
+  .Sliders{
+    display: flex;
+    justify-content:space-evenly;
+    width: 30rem;
+    justify-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .T{
+    text-align: center;
+  }
+</style>
+<body>
+  <header>
+    <a href="https://www.w3schools.com/html/html_colors_rgb.asp">html-color-RGB</a>
+    <h1>HTML RGB and RGBA Colors</h1>
+    <p>
+      An RGB color value represents RED, GREEN, and BLUE light sources.
+      <br><br>
+      An RGBA color value is an extension of RGB with an Alpha channel (opacity).
+    </p>
+  </header>
+  <main>
+    <section>
+      <h2>RGB color values</h2>
+      <p>
+        in HTML, a color can be specified as an RGB value, using this formula:
+        <h3>rgb(red, green, blue)</h3>
+        each parameter (red, green, blue) defines the intensity of the color with a value between 0 and 255.
+        <br><br><br>
+        <article class="ColorBoxCon">
+          <div id="ColorBox">aaaa</div>
+        </article>
+        <br>
+        <article class="Sliders">
+          <div class="T">
+          <p>RED</p>
+          <input oninput="changeColor()" id="rangeRed" type="range" n value="255" min="0" max="255">
+          <p id="RedValue">255</p>
+          </div>
+          <div class="T">
+          <p>GREEN</p>
+          <input oninput="changeColor()" id="rangeGreen" type="range" value="255" min="0" max="255">
+          <p id="GreenValue">255</p>
+          </div>
+          <div class="T">
+          <p>BLUE</p>
+          <input oninput="changeColor()" id="rangeBlue" type="range"  value="255" min="0" max="255">
+          <p id="BlueValue">255</p>
+          </div>
+        </article>
+      </p>
+    </section>
+  </main>
+
+<script> 
+  
+    function chageColor() {
+      let red = document.getElementById('rangeRed').value;
+      let green = document.getElementById('rangeGreen').value;
+      let blue = document.getElementById('rangeBlue').value;
+      let color = 'rgb(' + red + ',' + green +',' + blue + ')';
+      document.getElementById('ColorBox').style.backgroundColor = color;
+      document.getElementById('RedValue').innerHTML = red;
+    }
+
+    // document.getElementById('RedValue').addEventListener('input', changeColor);
+    // document.getElementById('GreenValue').addEventListener('input', changeColor);
+    // document.getElementById('BlueValue').addEventListener('input', changeColor);
+</script>
+  </script>
+</body>
+</html>
