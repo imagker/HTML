@@ -1,0 +1,37 @@
+.TipBox {
+      background-color: #FFFFCC;
+      }
+
+.Bold {
+      font-weight: bold;
+      }
+
+.RedGray {
+      background-color: rgb(233, 230, 230);
+      
+      color: red;
+      }
+
+a:link {
+      color: aqua;
+      background-color: transparent;
+      text-decoration: none;
+}
+
+a:visited{
+      color: gray;
+      background-color: transparent;
+      text-decoration: overline;
+}
+
+a:hover{
+      color: crimson;
+      background-color: transparent;
+      text-decoration: wave;
+}
+
+a:active{
+      color:yellowgreen;
+      background-color: transparent;
+      text-decoration: underline;
+}

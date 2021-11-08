@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML links</title>
+  <link rel="stylesheet" href="../HTML/CSS/styles.css">
+  <!-- TipBOx / Bold / RedGray -->
+</head>
+<body>
+  <header>
+    <a href="https://www.w3schools.com/html/html_links.asp">html-links</a>
+    <h1>HTML links</h1>
+    <p>Links are found in nearly all web paes. Links allow users to clik their way from page to page.</p>
+  </header>
+  <br><br>
+
+  <main>
+    <Section>
+      <h2>HTML Links-Hyperlinks</h2>
+      <p>
+        HTML links are hyperlinks.
+        <br><br>
+        you can click on a link and jump to another document.
+        <br><br>
+        when you move the mouse over a link, the mouse arrow will turn into a little hand.
+        <br><br>
+      </p>
+      <p class="TipBox">
+        <strong>Note:</strong> a link does not have to be a text. it can be any HTML element
+      </p>
+    </Section>
+    <br><br>
+    <l>
+      <h2>HTML links-Syntax</h2>
+      <p>
+        the HTML <span class="RedGray">&lt;a&gt;</span> tag defines a hyperlink. It has the following syntax:
+        <br><br>
+        &lt;a href="url"&gt;link text&lt;/a&gt;
+        <br><br>
+        the most important attribute of the <span class="RedGray">&lt;a&gt;</span> element is the <span class="RedGray">&lt;href&gt;</span> attribute, which inidicates the link's destination.
+        <br><br>
+        by default, links will appear as follows in all browsers:
+        <ul>
+          <li>An unvisited link is underlines and blue</li>
+          <li>a visited link is underlined and purple</li>
+          <li>an active link is underlined and red</li>
+        </p>
+        </ul>
+        <p class="TipBox">
+          <strong>Tip:</strong> links can of course be style styled with CSS, to get another look! 
+        </p>
+      </Section>
+    <br><br>
+    <Section>
+      <h2>HTML links - the target attribute</h2>
+      <p>
+        by default, the linked page will be displayed in the current browser window. to change this, you must specify another target for the link.
+        <br><br>
+        the <span class="RedGray">target</span> attribute specified where to open the linked documnet. <br><br>
+        the <span class="RedGray">target</span> attribute can have one of the following values  
+        <ul>
+          <li><span class="RedGray">_self</span> - default opens the documnet in the same window/tab as it was clicked 
+          <br><a href="https://www.w3schools.com/html/html_links.asp" target="_self">_self-links</a>
+          </li>
+          <li><span class="RedGray">_blank</span> - opens the doc in a new window or tab
+          <br><a href="https://www.w3schools.com/html/html_links.asp" target="_blank">_blank-links</a>
+          </li>
+          <li><span class="RedGray">_parent</span> - opens the doc in the parent frame 
+          <br><a href="https://www.w3schools.com/html/html_links.asp" target="_parent">_parent-links</a>
+          </li>
+          <li><span class="RedGray">_top</span> - opnes the doc in the full body of the window
+          <br><a href="https://www.w3schools.com/html/html_links.asp" target="_top">_top-links</a>
+          </li>
+        </ul>
+      </p>
+    </Section>
+    <br><br>
+    <Section>
+      <h2>Absolute UTLs vs. Realative URLs</h2>
+      <p>
+        <strong>Absolute URL</strong> is a full web adress in the <span class="RedGray">href</span>attribute <br><br>
+        a local link ( a link to a page within the same website) is specified with a <strong>relative URL</strong> (without the "http://www" part)
+      </p>
+    </Section>
+    <br><br>
+    <Section>
+      <h2>HTML links - image , email adress, button as a link</h2>
+      <article>
+        to use an image as a link, just put the <span class="RedGray">&lt;img&gt;</span> tag inside the <span class="RedGray">&lt;a&gt;</span> tag
+      </article>
+      <br><br>
+      <article>
+        use <span class="RedGray">mailto:</span> inside the <span class="RedGray">href</span> attribute to create a link that opens the user's email program:
+        <br> &lt;a href="mailto:chicken@example.com"&gt;
+      </article>
+      <br><br>
+      <article>
+        to use an HTML button as a link, you have to add some JS code.
+        <br><br>
+        JS allows you to specify what happens at certain events, such as a click of a button.
+      </article>
+    </Section>
+    <br><br>
+    <section>
+      <h2>Link Titles</h2>
+      <p>
+        use <span class="RedGray">title</span> attribute to set title and specify information about link.
+      </p>
+    </section>
+  </main>
+</body>
+</html>

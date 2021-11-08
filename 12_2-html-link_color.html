@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML links - different colors</title>
+  <link rel="stylesheet" href="/HTML/CSS/styles.css">
+</head>
+<body>
+  <header>
+    <a href="https://www.w3schools.com/html/html_links_colors.asp">html-link_color</a>
+    <h1>HTML links - Different Colors</h1>
+    <p>
+      an HTML link is displayed in a different color depending on whether it has been visited, is unvisited, or is active
+    </p>
+  </header>
+  <br>
+  <main>
+    <section>
+      <h2>HTML link colors</h2>
+      <p>
+        by default, a link will appear like thos (in all browsers):
+        <ul>
+          <li>an unvisited link is underlined and blue</li>
+          <li>a visited link is underlined and purple</li>
+          <li>an active link is underlined and red</li>
+        </ul>
+        you can change the link state colors, by using CSS:
+        <pre>
+          &lt;style&gt;
+            a:link {
+              color: green;
+              background-color: transparent;
+              text-decoration: none;
+            }
+          
+            a:visited {
+              color: pink;
+              background-color: transparent;
+              text-decoration: none;
+            }
+          
+            a:hover {
+              color: red;
+              background-color: transparent;
+              text-decoration: underline;
+            }
+          
+            a:active {
+              color: yellow;
+              background-color: transparent;
+              text-decoration: underline;
+            }
+          &lt;/style&gt;
+
+  if you are using this style to change colors of links, you should keep the other 
+  1. a:link
+  2. a:visitd
+  3. a:hover
+  4. a:active
+        </pre>
+      </p>
+    </section>
+    <br><br>
+    <section>
+      <h2>Link Buttons</h2>
+      <p>
+        a link can also be styled as a button, by using CSS:
+        <pre>
+          a:link, a:visited {
+          background-color: #f44336;
+          color: white;
+          padding: 15px 25px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          }
+          
+          a:hover, a:active {
+          background-color: red;
+          }
+        </pre>
+      </p>
+    </section>
+  </main>
+</body>
+</html>
