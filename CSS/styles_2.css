@@ -1,11 +1,3 @@
-.TipBox {
-      background-color: #FFFFCC;
-      }
-
-.Bold {
-      font-weight: bold;
-      }
-
 .RedGray {
       background-color: rgb(233, 230, 230);
       
@@ -41,6 +33,7 @@ a:active{
 }
 
 #APLE {
-      width: 450;
-      height: 675;
+  display: block;
+  width: 696px;
+  height: 564px;
 }

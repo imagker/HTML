@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Background Images</title>
+  <link rel="stylesheet" href="../HTML/CSS/styles.css">
+  <!-- TipBOx / Bold / RedGray -->
+  <style>
+    body{
+      background-image: url(/HTML/images/smily.png);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <a href="https://www.w3schools.com/html/html_images_background.asp">html-BgImages</a>
+    <h1>HTML Background Images</h1>
+    <p>A background image can be specified for almost any HTML element</p>
+  </header>
+  <main>
+    <section>
+      <h2>Background Image on a HTML element & page</h2>
+      <p>
+        To add a background image on an HTML element, use the HTML style attribute and the CSS <span class="RedGray">background-image</span> property.
+        <br><br>
+        If you want to add a bg to entire page add <span class="RedGray">background-image</span> attribute to a body tag.
+        <br><br>
+        <span class="Ex">body {
+        background-image: url('img_girl.jpg');
+        }</span>
+      </p>
+    </section>
+    <br><br>
+    <section>
+      <h2>Background Repeat</h2>
+      <p>
+        If the background images is smaller than the elem, the image will reapeat itself, horizontally and vertically, untill it reaches the end of the elem.
+        <br><br>
+        to avoid reapeating itself, set the <span class="RedGray">background-repeat</span> property to <span class="RedGray">no-repeat</span>
+      </p>
+    </section>
+    <br><br>
+    <section>
+      <h2>Background Cover</h2>
+      <p>
+        If you want the background image to cover the entire element, you can set the <span
+          class="RedGray">background-size</span> property to <span class="RedGray">cover</span>.
+        <br><br>
+        Also, to make sure the entire element is always covered, set the <span class="RedGray">background-attachment</span>
+        property to <span class="RedGray">fixed</span>:
+        <br><br>
+        This way, the background image will cover the entire element, with no stretching (the image will keep its original
+        proportions):
+      </p>
+    </section>
+    <br><br>
+    <section>
+      <h2>Background Stretch</h2>
+      <p>
+        If you want the background image to stretch to fit the entire element, you can set the <span
+          class="RedGray">background-size</span> property to <span class="RedGray">100% 100%</span>.
+      </p>
+    </section>
+    <br><br>
+    <section>
+      <h2></h2>
+      <p></p>
+    </section>
+    <br><br>
+  </main>
+
+</body>

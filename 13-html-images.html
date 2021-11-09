@@ -54,15 +54,48 @@
     <br><br>
     <section>
       <h2>Image Size - Width and Height</h2>
-      <p
-      ></p>
+      <p>
+        you can use <span class="RedGray">style</span> attribute to specify the width and height of an image. Alternatively, you can use <span class="RedGray">width</span> and <span class="RedGray">height</span> attribute.
+        <br><br>
+        However, we suggest using the <span class="RedGray">style</span> attribute. It prevents styles sheets from changing the size of images.
+    </p>
+      <article>
+        <style>
+          /* This style sets the width of all images to 100%: */
+          img {
+            width: 100%;
+          }
+        </style>
+          <h2>Width/Height Attributes or Style?</h2>
+        
+          <p>The first image uses the width attribute (set to 128 pixels), but the style in the head section overrides it, and
+            sets the width to 100%.</p>
+        
+          <img src="/HTML/images/smily.png" alt="smile" width="128" height="128">
+        
+          <p>The second image uses the style attribute to set the width to 128 pixels, this will not be overridden by the style
+            in the head section:</p>
+        
+          <img src="/HTML/images/smily.png" alt="smile" style="width:128px;height:128px;">
+      </article>
     </section>
     <br><br>
     <section>
-      <h2></h2>
+      <h2>Image Floating</h2>
       <p>
-
+        Use the CSS <span class="RedGray">float</span> property to let the image float to the right or to the let of a text.
       </p>
+      <article>
+        <p>
+          <img src="/HTML/images/smily.png" alt="Smiley face" style="float:right;width:80px;height:80px;">
+          The image will float to the right of the text.
+        </p>
+        <br><br>
+        <p>
+          <img src="/HTML/images/smily.png" alt="Smiley face" style="float:left;width:80px;height:80px;">
+          The image will float to the left of the text.
+        </p>
+      </article>
     </section>
     <br><br></main>
   </body>

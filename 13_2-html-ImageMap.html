@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML image Maps</title>
+  <link rel="stylesheet" href="/HTML/CSS/styles_2.css">
+</head>
+<body>
+  <header>
+    <a href="https://www.w3schools.com/html/html_images_imagemap.asp">html-imgamap</a>
+    <h1>HTML Image Maps</h1>
+    <p>With HTML image maps, you can create clickable areas on an image</p>
+  </header>
+  <main>
+    <h2>Image Maps</h2>
+    <p>
+      The HTML <span class="RedGray">&lt;map&gt;</span> tag defines an image map. An image map is an image with clickable areas. The areas defined with one or more <span class="RedGray">&lt;area&gt;</span> tags.
+      <br><br>
+      Try click on the apple & banana & background of the image below : 
+      
+      <img id="APLE" src="/HTML/images/apple_banana.png" alt="tabemono" usemap="#tabemono">
+      <map name="tabemono">
+        <area shape="poly" coords="109,157,165,123,200,136,238,166,246,186,243,236,222,283,187,305,153,309,110,283,83,237,85,192,105,157" href="https://namu.wiki/w/%EC%82%AC%EA%B3%BC" alt="apple">
+        <area shape="poly" coords="473,137,484,157,528,180,539,237,513,281,479,318,444,321,386,309,340,274,335,242,358,232,387,257,425,266,455,255,486,213,486,173,454,160,468,156" href="https://namu.wiki/w/%EB%B0%94%EB%82%98%EB%82%98" alt="banana">
+        <area shape="rect" coords="0,0,684,561" href="https://namu.wiki/w/%EA%B0%90%EC%9E%90%ED%8A%80%EA%B9%80" alt="bg">
+      </map>
+    </p>
+    <section>
+      <h2>Using Image Map</h2>
+      <p>
+        1. The image is inserted using the <span class="RedGray">&lt;img&gt;</span> tag. The only difference from other images is that you must add a <span class="RedGray">usemap</span> attribute : 
+        <br><br>
+        <span class="Ex">&lt;img src="apple_banana.jpg" alt="tabemono" usemap="#tabemono"&gt;</span>
+        <br><br>
+        <span class="RedGray">usemap</span> value starts with a hash tag <span class="RedGray">#</span> followed by the name of the image map, and is used to create a realationship between the image and the image map. 
+        <br><br><br>
+        2. Create img map by adding a <span class="RedGray">&lt;map&gt;</span> element. 
+        <br><br>
+        the <span class="RedGray">&lt;map&gt;</span> element is used to create an img map, and is linked to the image by using the required <span class="RedGray">name</span> attribue:
+        <br><br>
+        <span class="Ex">&lt;map name="tabemono"&gt;</span>
+        <br><br><br>
+        3. finally add the clickable areas. a clickable area is defines using an <span class="RedGray">&lt;area&gt;</span> element.
+        <br><br>
+        <span class="Ex">&lt;area shape="rect" coords="34, 44, 270, 350" href="computer.htm"&gt;</span>
+      </p>
+    </section>
+    <br><br>
+    <section>
+      <h2>Map attributes</h2>
+      <p>
+        <ul>
+          <li>
+            <span style="background-color: lightgray; font-weight: bold;">name</span> - the <span style="background-color: lightgray;">name</span> attribute gives the map a name so that it can be referenced. The attribute must be present and must have a non-empty value with no space characters. Also attribute must not be equal to the value of the <span style="background-color: lightgray;">name</span> attribute of another <span style="background-color: lightgray;">&lt;map&gt;</span> element in the same document. if the <span style="background-color: lightgray;">id</span> attribute is also specified, both attributes must have the same value.
+          </li>
+        </ul>
+      </p>
+    </section>
+    <br><br>
+    <section>
+      <h2>Area attributes</h2>
+      <p>
+        <span style="background-color: lightgray; font-weight: bold;">alt</span>
+        <br><br>
+        <span style="background-color: lightgray; font-weight: bold;">coords</span>
+        <br><br>
+        the <span style="background-color: lightgray;">coords</span> attribute details of the <span style="background-color: lightgray;">shape</span> attribute in size, shape, and placement of an <span style="background-color: lightgray;">&lt;area&gt;</span>
+        <ul>
+          <li>
+            <span style="background-color: lightgray;">rect</span>
+            - the value is x1,y1,x2,y2. value specifies the coordinates of the top-left and bottom-right corner of the rectangle.
+          </li>
+          <br>
+          <li>
+            <span style="background-color: lightgray;">circle</span>
+            - the value is x,y,radius. value specified the coordinates of the circle center and the radius
+          </li>
+          <br>
+          <li>
+            <span style="background-color: lightgray;">poly</span>
+            - the value is x1,y1,x2,y2,...,xn,yn. value specifies the coordinates of the edges of the polygon. if the first and last coordinate pairs are not the same, the browser will add the last coordinate pair to close the polygon.
+          </li>
+          <br>
+          <li>
+            <span style="background-color: lightgray;">default</span>
+            - defines the enitre region
+          </li>
+        </ul>
+        <br>
+        <span style="background-color: lightgray; font-weight: bold;">download</span>
+        <br><br>
+        this attribute, if present, indicates that the author intends the hyperlink to be used for downloading a resource. See <span style="background-color: lightgray;">&lt;a&gt;</span> for a full description of the <span style="background-color: lightgray;">download</span> attribute.
+        <br><br>
+        <span style="background-color: lightgray; font-weight: bold;">href</span>
+        <br><br>
+        <span style="background-color: lightgray; font-weight: bold;">hreflang</span>
+        <br><br>
+        <span style="background-color: lightgray; font-weight: bold;">ping</span>
+        <br><br>
+        <span style="background-color: lightgray; font-weight: bold;">referrerpolicy</span>
+        <br><br>
+        <span style="background-color: lightgray; font-weight: bold;">rel</span>
+        <br><br>
+        <span style="background-color: lightgray; font-weight: bold;">shape</span>
+        <br><br>
+        <span style="background-color: lightgray; font-weight: bold;">target</span>
+      </p>
+    </section>
+  </main>
+</body>
+</html>
