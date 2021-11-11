@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Unordered Lists</title>
+  <link rel="stylesheet" href="/HTML/CSS/styles.css">
+  <link rel="shortcut icon" href="/HTML/images/favicon.ico">
+  <style>
+    .ul {
+      list-style-type: none;
+      margin: 00;
+      padding: 00;
+      overflow: hidden;
+      background-color: #333333;
+    }
+
+    .li {
+      float: left;
+      
+    }
+
+    .li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 16px;
+      text-decoration: none;
+    }
+
+    .li a:hover {
+      background-color: #111111;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <a href="https://www.w3schools.com/html/html_lists_unordered.asp">html-unordered lists</a>
+    <h1>HTML Unordered Lists</h1>
+    <p>
+      The HTML <span class="RedGray">&lt;ul&gt;</span> tag defines an unordered (bulleted) list.
+      <ul>
+        <li>chicken</li>
+        <li>meat</li>
+        <li>fish</li>
+      </ul>
+    </p>
+  </header>
+  <main>
+    <section>
+      <h2>Unordered HTML List - Choose List Item Marker</h2>
+      <p>
+        The CSS <span class="RedGray">list-style-type property</span> is used to define the style of the list item marker. It can have one of the following values:
+        <table>
+          <tr>
+            <th>Value</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td>disc</td>
+            <td>Sets the list item marker to a bullet (default)</td>
+          </tr>
+          <tr>
+            <td>circle</td>
+            <td>Sets the list item marker to a circle
+          </td>
+          </tr>
+          <tr>
+            <td>square</td>
+            <td>Sets the list item marker to a square
+          </td>
+          </tr>
+          <tr>
+            <td>none</td>
+            <td>The list items will not be marked
+          </td>
+          </tr>
+        </table>
+
+        <ul>
+          <ul style="list-style-type:disc;">
+            <li>chicken</li>
+            <li>meat</li>
+            <li>fish</li>
+          </ul>
+          <br>
+          <ul style="list-style-type:circle;">
+            <li>chicken</li>
+            <li>meat</li>
+            <li>fish</li>
+          </ul>
+          <br>
+          <ul style="list-style-type:square;">
+            <li>chicken</li>
+            <li>meat</li>
+            <li>fish</li>
+          </ul>
+          <br>
+          <ul style="list-style-type:none;">
+            <li>chicken</li>
+            <li>meat</li>
+            <li>fish</li>
+          </ul>
+        </ul>
+      </p>
+    </section>
+    <br><br>
+    <section>
+      <h2>Nested HTML Lists</h2>
+      <p>Lists can be nested (list inside list):
+        <ul>
+          <li>fish</li>
+          <li>meat
+            <ul>
+              <li>pork</li>
+              <li>cow</li>
+            </ul>
+          </li>
+          <li>meat</li>
+        </ul>
+      </p>
+    </section>
+    <br><br>
+    <section>
+      <h2>Horizontal List with CSS</h2>
+      <p>
+        HTML lists can be styled in many different ways with CSS.
+        <br><br>
+        One popular way is to style a list horizontally, to create a navigation menu:
+        <h2>Navigation Menu</h2>
+        <p>In this example, we use CSS to style the list horizontally, to create a navigation menu:</p>
+        
+        <ul class="ul">
+          <li class="li"><a href="#home">Home</a></li>
+          <li class="li"><a href="#news">News</a></li>
+          <li class="li"><a href="#contact">Contact</a></li>
+          <li class="li"><a href="#about">About</a></li>
+        </ul>
+      </p>
+    </section>
+    <br><br></main>
+</body>
