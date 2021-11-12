@@ -1,4 +1,11 @@
+p{
+      line-height: 1.5rem;
+}
+
 .TipBox {
+      display: block;
+      width: 70%;
+      padding:1rem;
       background-color: #FFFFCC;
       }
 
@@ -8,18 +15,18 @@
 
 .RedGray {
       background-color: rgb(233, 230, 230);
-      
+      padding: 2.5px;
       color: red;
       }
 
 a:link {
-      color: aqua;
+      color: rgb(0, 187, 0);
       background-color: transparent;
       text-decoration: none;
 }
 
 a:visited{
-      color: gray;
+      color: rgb(0, 187, 0);
       background-color: transparent;
       text-decoration: overline;
 }

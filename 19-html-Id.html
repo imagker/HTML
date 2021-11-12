@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML id Attribute</title>
+  <link rel="stylesheet" href="/HTML/CSS/styles.css">
+  <link rel="shortcut icon" href="/HTML/images/favicon.ico">
+  <style>
+    .ul {
+      font-size: 10pt;
+      list-style-type: none;
+      margin: 00;
+      padding: 00;
+      overflow: hidden;
+      background-color: #333333;
+    }
+
+    .li {
+      float: left;
+    }
+
+    .li a {
+      display: block;
+      color: rgb(0, 187, 0);
+      text-align: center;
+      padding-top: 1em;
+      padding-bottom: 1em;
+      padding-left: 3em;
+      padding-right: 3em;
+      text-decoration: none;
+    }
+
+    .li a:hover {
+      background-color: whitesmoke;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <ul class="ul">
+      <li class="li"><a href="#T1">HTML id Attribute</a></li>
+      <li class="li"><a href="#T2">Using The id Attribute</a></li>
+      <li class="li"><a href="#T3">Difference Between Class and ID</a></li>
+      <li class="li"><a href="#T4">Using The id Attribute in JavaScript</a></li>
+    </ul>
+  </header>
+  <br>
+  <main>
+    <section>
+      <h1 id="T1"><a href="https://www.w3schools.com/html/html_id.asp">HTML id Attribute</a></h1>
+      <p>
+        The HTML <span class="RedGray">id</span> attribute is used to specify a unique id for an HTML element.
+        
+        You cannot have more than one element with the same id in an HTML document.
+      </p>
+    </section>
+    <br><br>
+    <section>
+      <h2 id="T2">Using The id Attribute</h2>
+      <p>
+        The id attribute specifies a unique <span class="RedGray">id</span> for an HTML element. The value of the <span class="RedGray">id</span> attribute must be unique within the HTML
+        document.
+        <br><br>
+        The <span class="RedGray">id</span> attribute is used to point to a specific style declaration in a style sheet. It is also used by JavaScript to
+        access and manipulate the element with the specific id.
+        <br><br>
+        The syntax for id is: write a hash character (#), followed by an id name. Then, define the CSS properties within curly
+        braces {}.
+        <br><br>
+        <span class="TipBox">
+          <strong>Tip:</strong> The id name is case sensitive!
+          
+          <br><br>
+          <strong>Note:</strong> The id name must contain at least one character, cannot start with a number, and must not contain whitespaces (spaces,
+          tabs, etc.).
+          <br>
+        </span>
+      </p>
+    </section>
+    <br><br>
+    <section>
+      <h2 id="T3">Difference Between Class and ID</h2>
+      <p>
+        A class name can be used by multiple HTML elements, while an id name must only be used by one HTML element within the
+        page.
+      </p>
+    </section>
+    <br><br>
+    <section>
+      <h2 id="T4">Using The id Attribute in JavaScript</h2>
+      <p>
+        The <span class="RedGray">id</span> attribute can also be used by JavaScript to perform some tasks for that specific element.
+        
+        JavaScript can access an element with a specific id with the <span class="RedGray">getElementById()</span> method
+      </p>
+    </section>
+  </main>
+</body>
+
+</html>
