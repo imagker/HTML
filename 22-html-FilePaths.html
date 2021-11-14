@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML File Paths</title>
+  <link rel="stylesheet" href="/HTML/CSS/styles.css">
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <style>
+    .ul {
+      font-size: 10pt;
+      list-style-type: none;
+      margin: 00;
+      padding: 00;
+      overflow: hidden;
+      background-color: #333333;
+    }
+
+    .li {
+      float: left;
+    }
+
+    .li a {
+      display: block;
+      color: rgb(0, 187, 0);
+      text-align: center;
+      padding-top: 1em;
+      padding-bottom: 1em;
+      padding-left: 3em;
+      padding-right: 3em;
+      text-decoration: none;
+    }
+
+    .li a:hover {
+      background-color: whitesmoke;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <ul class="ul">
+      <li class="li"><a href="#T1">HTML File Paths</a></li>
+      <li class="li"><a href="#T2">File Path Examples</a></li>
+      <li class="li"><a href="#T3">HTML File Paths</a></li>
+      <li class="li"><a href="#T4">Absolute File Paths</a></li>
+      <li class="li"><a href="#T4">Relative File Paths</a></li>
+    </ul>
+  </header>
+  <br>
+  <main>
+    <section>
+      <h1 id="T1"><a href="https://www.w3schools.com/html/html_filepaths.asp">HTML File Paths</a></h1>
+      <p>
+        A file path describes the location of a file in a web site's folder structure.
+      </p>
+    </section>
+    <br><br>
+    <section>
+      <h2 id="T2">File Path Examples</h2>
+      <p>
+        <table>
+          <tr>
+            <th>Path</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td>
+              &lt;img src="picture.jpg"&gt;
+            </td>
+            <td>
+              The "picture.jpg" file is located in the same folder as the current page
+            </td>
+          </tr>
+          <tr>
+            <td>
+              &lt;img src="images/picture.jpg"&gt;
+            </td>
+            <td>
+              The "picture.jpg" file is located in the images folder in the current folder
+            </td>
+          </tr>
+          <tr>
+            <td>&lt;img src="/images/picture.jpg"&gt;</td>
+            <td>
+              The "picture.jpg" file is located in the images folder at the root of the current web
+            </td>
+          </tr>
+          <tr>
+            <td>&lt;img src="../picture.jpg"&gt;</td>
+            <td>
+              The "picture.jpg" file is located in the folder one level up from the current folder
+            </td>
+          </tr>
+        </table>
+      </p>
+    </section>
+    <br><br>
+    <section>
+      <h2 id="T3">HTML File Paths</h2>
+      <p>
+        A file path describes the location of a file in a web site's folder structure.
+        <br><br>
+        File paths are used when linking to external files, like:
+        <ul>
+          <li>Web pages</li>
+          <li>Images</li>
+          <li>Style sheets</li>
+          <li>JavaScripts</li>
+        </ul>
+
+      </p>
+    </section>
+    <br><br>
+    <section>
+      <h2 id="T4">Absolute File Paths</h2>
+      <p>
+        An absolute file path is the full URL to a file:
+        <br><br>
+        <span class="Ex">
+          &lt;img src="https://www.w3schools.com/images/picture.jpg" alt="Mountain"&gt;
+        </span>
+      </p>
+    </section>
+    <br><br>
+    <section>
+      <h2 id="T4">Relative File Paths</h2>
+      <p>
+        A relative file path points to a file relative to the current page.
+        <br><br>
+        
+        In the <a href="#T2">File Path Examples</a>, the file path points to a file in the images folder located at different folder.
+      </p>
+    </section>
+  </main>
+</body>
+
+</html>
