@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Iframes</title>
+  <link rel="stylesheet" href="/HTML/CSS/styles.css">
+  <link rel="shortcut icon" href="/HTML/images/favicon.ico">
+  <style>
+    .ul {
+      font-size: 10pt;
+      list-style-type: none;
+      margin: 00;
+      padding: 00;
+      overflow: hidden;
+      background-color: #333333;
+    }
+
+    .li {
+      float: left;
+    }
+
+    .li a {
+      display: block;
+      color: rgb(0, 187, 0);
+      text-align: center;
+      padding-top: 1em;
+      padding-bottom: 1em;
+      padding-left: 3em;
+      padding-right: 3em;
+      text-decoration: none;
+    }
+
+    .li a:hover {
+      background-color: whitesmoke;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <ul class="ul">
+      <li class="li"><a href="#T1">HTML Iframes</a></li>
+      <li class="li"><a href="#T2">HTML Iframe Syntax</a></li>
+      <li class="li"><a href="#T3">Set Height and Width</a></li>
+      <li class="li"><a href="#T4">Remove the Border</a></li>
+      <li class="li"><a href="#T5">Target for a Link</a></li>
+    </ul>
+  </header>
+  <br>
+  <main>
+    <section>
+      <h1 id="T1"><a href="https://www.w3schools.com/html/html_iframe.asp">HTML Iframes</a></h1>
+      <p>
+        An HTML iframe is used to display a web page within a web page.
+        <br></br>
+        <iframe src="http://127.0.0.1:5500/HTML/0-html-intro.html"  height="400" width="800" style="border: 2px solid red;" title="HTML intro"></iframe>
+      </p>
+    </section>
+    <br><br>
+    <section>
+      <h2 id="T2">HTML Iframe Syntax</h2>
+      <p>
+        The HTML <span class="RedGray">&lt;iframe&gt;</span> tag specifies an inline frame.
+          <br><br>
+          An inline frame is used to embed another document within the current HTML document.
+          <br><br>
+          <span class="Ex">&lt;iframe src="url" title="description"&gt;&lt;/iframe&gt;</span>
+          <br><br>
+          <span class="TipBox">
+            <stron>Tip:</strong> It is a good practice to always include a <span class="RedGray">title</span> attribute for the <span class="RedGray">&lt;iframe&gt;</span>. This is used by screen readers to read out
+              what the content of the iframe is.
+          </span>
+      </p>
+    </section>
+    <br><br>
+    <section>
+      <h2 id="T3">Iframe - Set Height and Width</h2>
+      <p>
+        Use the <span class="RedGray">height</span> and <span class="RedGray">width</span> attributes to specify the size of the iframe.
+        <br>
+        The height and width are specified in pixels by default.
+        <br><br>
+        Or you can add the <span class="RedGray">style</span> attribute and use the CSS <span class="RedGray">height</span> and <span class="RedGray">width</span> properties.
+
+      </p>
+    </section>
+    <br><br>
+    <section>
+      <h2 id="T4">Iframe - Remove the Border</h2>
+      <p>
+        By default, an iframe has a border around it.
+        <br>
+        To remove the border, add the <span class="RedGray">style</span> attribute and use the CSS border property.
+        <br><br>
+        With CSS, you can also change the size, style and color of the iframe's border.
+      </p>
+    </section>
+    <br><br>
+    <section>
+      <h2 id="T5">Iframe - Target for a Link</h2>
+      <p>
+        An iframe can be used as the target frame for a link.
+        <br><br>
+        The <span class="RedGray">target</span> attribute of the link must refer to the <span class="RedGray">name</span> attribute of the iframe.
+        <br><br>
+        <iframe src="_blank" name="iframe_a" height="300px" width="100%" title="Iframe Example"></iframe>
+        <p><a href="http://127.0.0.1:5500/HTML/1-html-basic.html" target="iframe_a">HTML-basic</a></p>
+        <p><a href="http://127.0.0.1:5500/HTML/2-html-elements.html" target="iframe_a">HTML-elements</a></p>
+      </p>
+    </section>
+  </main>
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML JavaScript</title>
+  <link rel="stylesheet" href="/HTML/CSS/styles.css">
+  <link rel="shortcut icon" href="/HTML/images/favicon.ico">
+  <style>
+    .ul {
+      font-size: 10pt;
+      list-style-type: none;
+      margin: 00;
+      padding: 00;
+      overflow: hidden;
+      background-color: #333333;
+    }
+
+    .li {
+      float: left;
+    }
+
+    .li a {
+      display: block;
+      color: rgb(0, 187, 0);
+      text-align: center;
+      padding-top: 1em;
+      padding-bottom: 1em;
+      padding-left: 3em;
+      padding-right: 3em;
+      text-decoration: none;
+    }
+
+    .li a:hover {
+      background-color: whitesmoke;
+    }
+
+    /* h1 {
+        font-size: 2rem;
+      } */
+  </style>
+</head>
+
+<body>
+  <header>
+    <ul class="ul">
+      <li class="li"><a href="#T1">HTML JavaScript</a></li>
+      <li class="li"><a href="#T2">The HTML &lt;script&gt; Tag</a></li>
+      <li class="li"><a href="#T3">The HTML &lt;noscript&gt; Tag</a></li>
+
+    </ul>
+  </header>
+  <br>
+  <main>
+    <section>
+      <h1 id="T1"><a href="https://www.w3schools.com/html/html_scripts.asp">HTML JavaScript</a></h1>
+      <p>
+        JavaScript makes HTML pages more dynamic and interactive.
+      </p>
+    </section>
+    <br><br>
+    <section>
+      <h2 id="T2">The HTML &lt;script&gt; Tag</h2>
+      <p>
+        The HTML <span class="RedGray">&lt;script&gt;</span> tag is used to define a client - side script(JavaScript).
+        <br><br>
+        The <span class="RedGray">&lt;script&gt;</span> element either contains script statements, or it points to an external script file through the <span class="RedGray">src</span> attribute.
+        <br><br>
+        Common uses for JavaScript are image manipulation, form validation, and dynamic changes of content.
+        <br><br>
+        To select an HTML element, JavaScript most often uses the document.<span class="RedGray">getElementById()</span> method.
+        <br><br>
+        This JavaScript example writes "Hello JavaScript!" into an HTML element with id = "demo":
+        <br><br>
+        <span class="Ex">&lt;script&gt;
+          document.getElementById("demo").innerHTML = "Hello JavaScript!";
+        &lt;/script&gt;</span>
+        
+        <p id="demo"></p>
+        <script>
+          document.getElementById("demo").innerHTML = "Hello JavaScript!";
+        </script>
+
+      </p>
+    </section>
+    <br><br>
+    <section>
+      <h2 id="T3">The HTML &lt;noscript&gt;</h2>
+      <p>
+        The HTML <span class="RedGray">&lt;noscript&gt;</span> tag defines an alternate content to be displayed to users that have disabled scripts in their
+          browser or have a browser that doesn't support scripts
+      </p>
+    </section>
+    <br><br>
+  </main>
+</body>
+
+</html>
