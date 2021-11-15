@@ -36,6 +36,11 @@
     .li a:hover {
       background-color: whitesmoke;
     }
+        @media screen and (max-width: 800px) {
+              .li {
+                width: 50%;
+                /* The width is 100%, when the viewport is 800px or smaller */
+              }}
   </style>
 </head>
 
@@ -109,6 +114,7 @@
         <br><br>
         That way the text size will follow the size of the browser window:
         <h1 style="font-size:10vw; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;" >Hello World</h1>
+        <p style="font-size:5vw;">Resize the browser window to see how the text size scales.</p>
         
       </p>
     </section>
@@ -177,24 +183,21 @@
           <div class="right">
             <p>Right Content</p>
           </div>
-        </artl>
+        
       </p>
     </section>
     <br><br>
+    
     <section>
-      <h2 id="T7">title4</h2>
+      <h2 id="T7">Responsive Web Page - Full Example</h2>
       <p>
-        description
-      </p>
-    </section>
-    <br><br>
-    <section>
-      <h2 id="T8">title4</h2>
-      <p>
-        description
-      </p>
-    </section>
+        A responsive web page should look good on large desktop screens and on small mobile phones.
+        <br><br>
+        <iframe src="/HTML/ResponsiveWebPage-FullExample.html" frameborder="2px" style="display: inline-block; width: 100%; height: 400px;"></iframe>
 
+      </p>
+    </section>
+    <br><br>
   </main>
 </body>
 
