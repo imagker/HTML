@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Responsive Web Design</title>
+  <link rel="stylesheet" href="/HTML/CSS/styles.css">
+  <link rel="shortcut icon" href="/HTML/images/favicon.ico">
+  <style>
+    .ul {
+      font-size: 10pt;
+      list-style-type: none;
+      margin: 00;
+      padding: 00;
+      overflow: hidden;
+      background-color: #333333;
+    }
+
+    .li {
+      float: left;
+    }
+
+    .li a {
+      display: block;
+      color: rgb(0, 187, 0);
+      text-align: center;
+      padding-top: 1em;
+      padding-bottom: 1em;
+      padding-left: 3em;
+      padding-right: 3em;
+      text-decoration: none;
+    }
+
+    .li a:hover {
+      background-color: whitesmoke;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <ul class="ul">
+      <li class="li"><a href="#T1">HTML Responsive Web Design</a></li>
+      <li class="li"><a href="#T2">What is Responsive Web Design?</a></li>
+      <li class="li"><a href="#T3">Setting The Viewport</a></li>
+      <li class="li"><a href="#T4">Using the width Property</a></li>
+      <li class="li"><a href="#T5">Responsive Text Size</a></li>
+      <li class="li"><a href="#T6">title4</a></li>
+      <li class="li"><a href="#T7">title4</a></li>
+      <li class="li"><a href="#T8">title4</a></li>
+      <li class="li"><a href="#T9">title4</a></li>
+
+    </ul>
+  </header>
+  <br>
+  <main>
+    <section>
+      <h1 id="T1"><a href="https://www.w3schools.com/html/html_responsive.asp">HTML Responsive Web Design</a></h1>
+      <p>
+        esponsive web design is about creating web pages that look good on all devices!
+        <br><br>
+        A responsive web design will automatically adjust for different screen sizes and viewports.
+      </p>
+    </section>
+    <br><br>
+    <section>
+      <h2 id="T2">What is Responsive Web Design?</h2>
+      <p>
+        Responsive Web Design is about using HTML and CSS to automatically <b><em> resize, hide, shrink, or enlarge,</b></em> a website, to make it look good on all devices (desktops, tablets, and phones):
+      </p>
+    </section>
+    <br><br>
+    <section>
+      <h2 id="T3">Setting The Viewport</h2>
+      <p>
+        click <b>Setting The Viewport</b> 
+        <iframe src="/HTML/23-html-HeadElement.html" frameborder="3px" width="100%" height="400px"></iframe>
+      </p>
+    </section>
+    <br><br>
+    <section>
+      <h2 id="T4">Responsive Images</h2>
+      <p>
+        Responsive images are images that scale nicely to fit any browser size.
+        <h3>Using the width Property</h3>
+        <p>
+          If the CSS <span class="RedGray">width</span> property is set to 100%, the image will be responsive and scale up and down:
+          <img src="/HTML/images/smily.png" alt="smily" style="width:100%">
+          Notice that in the example above, the image can be scaled up to be larger than its original size. 
+          <br> A better solution, in
+          many cases, will be to use the <span class="RedGray">max-width</span> property instead.
+        </p><br>
+        <h3>Using the max-width Property</h3>
+        <p>
+          If the <span class="RedGray">max-width</span> property is set to 100%, the image will scale down if it has to, but never scale up to be larger than its original size:
+          <img src="/HTML/images/smily.png" alt="smily" style="max-width:100%">
+        </p>
+        <h3>Show Different Images Depending on Browser Width</h3>
+        <iframe src="/HTML/13_4-html-PictureElement.html" frameborder="3px" width="100%" height="400px" ></iframe>
+      </p>
+    </section>
+    <br><br>
+    <section>
+      <h2 id="T5">Responsive Text Size</h2>
+      <p>
+        The text size can be set with a "vw" unit, which means the "viewport width".
+        <br><br>
+        That way the text size will follow the size of the browser window:
+        <h1 style="font-size:10vw; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;" >Hello World</h1>
+        
+      </p>
+    </section>
+    <br><br>
+    <section>
+      <h2 id="T6">Media Queries</h2>
+      <p>
+        In addition to resize text and images, it is also common to use media queries in responsive web pages.
+        <br><br>
+        With media queries you can define completely different styles for different browser sizes.
+        <br></br>
+        Example: resize the browser window to see that the three div elements below will display horizontally on large screens
+        and stacked vertically on small screens:
+        <div style="border: 1px solid black;">
+          <style>
+            * {
+              box-sizing: border-box;
+            }
+          
+            .left {
+              background-color: #2196F3;
+              padding: 20px;
+              float: left;
+              width: 20%;
+              /* The width is 20%, by default */
+            }
+          
+            .main {
+              background-color: #f1f1f1;
+              padding: 20px;
+              float: left;
+              width: 60%;
+              /* The width is 60%, by default */
+            }
+          
+            .right {
+              background-color: #04AA6D;
+              padding: 20px;
+              float: left;
+              width: 20%;
+              /* The width is 20%, by default */
+            }
+          
+            /* Use a media query to add a break point at 800px: */
+            @media screen and (max-width: 800px) {
+          
+              .left,
+              .main,
+              .right {
+                width: 100%;
+                /* The width is 100%, when the viewport is 800px or smaller */
+              }
+            }
+          </style>
+          <p>Resize the browser window.</p>
+          
+          <p>Make sure you reach the breakpoint at 800px when resizing this frame.</p>
+          <div class="left">
+            <p>Left Menu</p>
+          </div>
+          
+          <div class="main">
+            <p>Main Content</p>
+          </div>
+          
+          <div class="right">
+            <p>Right Content</p>
+          </div>
+        </artl>
+      </p>
+    </section>
+    <br><br>
+    <section>
+      <h2 id="T7">title4</h2>
+      <p>
+        description
+      </p>
+    </section>
+    <br><br>
+    <section>
+      <h2 id="T8">title4</h2>
+      <p>
+        description
+      </p>
+    </section>
+
+  </main>
+</body>
+
+</html>

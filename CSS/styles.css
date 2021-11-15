@@ -15,7 +15,10 @@ p{
 
 .RedGray {
       background-color: rgb(233, 230, 230);
-      padding: 2.5px;
+      /* padding-bottom: 0.1rem;
+      padding-top: 0.1rem; */
+      padding-left: 0.1rem;
+      padding-right: 0.1rem;
       color: red;
       }
 
@@ -44,8 +47,15 @@ a:active{
 }
 
 .Ex {
+
       color: royalblue;
 }
+.EX {
+      padding: 0.3%;
+      border: 1px solid black;
+      color: royalblue;
+}
+
 
 #APLE {
       width: 450;
