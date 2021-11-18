@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Semantic Elements</title>
+  <link rel="stylesheet" href="/HTML/CSS/styles.css">
+  <link rel="shortcut icon" href="/HTML/images/favicon.ico">
+  <style>
+    .ul {
+      font-size: 10pt;
+      list-style-type: none;
+      margin: 00;
+      padding: 00;
+      overflow: hidden;
+      background-color: #333333;
+    }
+
+    .li {
+      float: left;
+    }
+
+    .li a {
+      display: block;
+      color: rgb(0, 187, 0);
+      text-align: center;
+      padding-top: 1em;
+      padding-bottom: 1em;
+      padding-left: 3em;
+      padding-right: 3em;
+      text-decoration: none;
+    }
+
+    .li a:hover {
+      background-color: whitesmoke;
+    }
+
+    @media screen and (max-width: 800px) {
+      .li {
+        width: 50%;
+        /* The width is 100%, when the viewport is 800px or smaller */
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <ul class="ul">
+      <li class="li"><a href="#T1">HTML Semantic Elements</a></li>
+      <li class="li"><a href="#T2">What are Semantic Elements?</a></li>
+      <li class="li"><a href="#T3">Semantic Elements in HTML</a></li>
+      <li class="li"><a href="#T4">HTML &lt;section&gt; Element</a></li>
+      <li class="li"><a href="#T5">HTML &lt;article&gt; Element</a></li>
+      <li class="li"><a href="#T6">Nesting &lt;article&gt; in &lt;section&gt; or Vice Versa?</a></li>
+      <li class="li"><a href="#T7">HTML &lt;header&gt; Element</a></li>
+      <li class="li"><a href="#T8">HTML &lt;footer&gt; Element</a></li>
+      <li class="li"><a href="#T9">HTML &lt;nav&gt; Element</a></li>
+      <li class="li"><a href="#T10">HTML &lt;aside&gt; Element</a></li>
+      <li class="li"><a href="#T11">HTML &lt;figure&gt; and &lt;figcaption&gt; Element</a></li>
+      <li class="li"><a href="#T12">Why Semantic Elements?</a></li>
+      <li class="li"><a href="#T13">Semantic Elements in HTML</a></li>
+    </ul>
+  </header>
+  <br>
+  <main>
+    <section>
+      <h1 id="T1"><a href="https://www.w3schools.com/html/html5_semantic_elements.asp">HTML Semantic Elements</a></h1>
+      <p>
+        Semantic elements = elements with a meaning.
+      </p>
+    </section>
+    <br><br>
+    <section>
+      <h2 id="T2">What are Semantic Elements?</h2>
+      <p>
+        A semantic element clearly describes its meaning to both the browser and the developer.
+        <br><br>
+        Examples of non-semantic elements: <span class="RedGray">&lt;div&gt;</span> and <span class="RedGray">&lt;span&gt;</span> - Tells nothing about its content.
+        <br><br>
+        Examples of semantic elements: <span class="RedGray">&lt;form&gt;</span>, <span class="RedGray">&lt;table&gt;</span>, and <span class="RedGray">&lt;article&gt;</span> - Clearly defines its content.
+      </p>
+    </section>
+    <br><br>
+    <section>
+      <h2 id="T3">Semantic Elements in HTML</h2>
+      <p>
+        Many web sites contain HTML code like: &lt;div id="nav"&gt; &lt;div class="header"&gt; &lt;div id="footer"&gt; to indicate navigation, header, and footer.
+        <br><br>
+        In HTML there are some semantic elements that can be used to define different parts of a web page:
+
+        <ul>
+          <li>&lt;article&gt;</li>
+          <li>&lt;aside&gt;</li>
+          <li>&lt;details&gt;</li>
+          <li>&lt;figcaption&gt;</li>
+          <li>&lt;figure&gt;</li>
+          <li>&lt;footer&gt;</li>
+          <li>&lt;header&gt;</li>
+          <li>&lt;main&gt;</li>
+          <li>&lt;mark&gt;</li>
+          <li>&lt;nav&gt;</li>
+          <li>&lt;section&gt;</li>
+          <li>&lt;summary&gt;</li>
+          <li>&lt;time&gt;</li>
+        </ul>
+        <img src="/HTML/images/img_sem_elements.gif" alt="sem_elem">
+      </p>
+    </section>
+    <br><br>
+    <section>
+      <h2 id="T4">HTML &lt;section&gt; Element</h2>
+      <p>
+        The <span class="RedGray">&lt;span&gt;</span> element defines a section in a document.
+        <br><br>
+        According to W3C's HTML documentation: "A section is a thematic grouping of content, typically with a heading."
+        <br><br>
+        Examples of where a <span class="RedGray">&lt;span&gt;</span> element can be used:
+        <ul>
+          <li>Chapters</li>
+          <li>Introduction</li>
+          <li>New items</li>
+          <li>Contact information</li>
+        </ul>
+        <br>
+        A web page could normally be split into sections for introduction, content, and contact information.
+      </p>
+    </section>
+    <br><br>
+    <section>
+      <h2 id="T5">HTML &lt;article&gt; Element</h2>
+      <p>
+        The <span class="RedGray">&lt;article&gt;</span> element specifies independent, self-contained content.
+        <br><br>
+        An article should make sense on its own, and it should be possible to distribute it independently from the rest of the
+        web site.
+        <br><br>
+        Examples of where the <span class="RedGray">&lt;article&gt;</span> element can be used:
+        <ul>
+          <li>Forum posts</li>
+          <li>Blog posts</li>
+          <li>User comments</li>
+          <li>Product cards</li>
+          <li>Newspaper articles</li>
+        </ul>
+      </p>
+    </section>
+    <br><br>
+    <section>
+      <h2 id="T6">Nesting &lt;article&gt; in &lt;section&gt; or Vice Versa?</h2>
+      <p>
+        The <span class="RedGray">&lt;article&gt;</span> element specifies independent, self-contained content.
+        <br><br>
+        The <span class="RedGray">&lt;section&gt;</span> element defines section in a document.
+        <br><br>
+        Can we use the definitions to decide how to nest those elements? No, we cannot!
+        <br><br>
+        So, you will find HTML pages with <span class="RedGray">&lt;section&gt;</span> elements containing <span class="RedGray">&lt;article&gt;</span> elements, and <span class="RedGray">&lt;article&gt;</span> elements containing <span class="RedGray">&lt;section&gt;</span> elements.
+      </p>
+    </section>
+    <br><br>
+    <section>
+      <h2 id="T7">HTML &lt;header&gt; Element</h2>
+      <p>
+        The <span class="RedGray">&lt;header&gt;</span> element represents a container for introductory content or a set of navigational links.
+        <br><br>
+        A <span class="RedGray">&lt;header&gt;</span> element typically contains:
+          <ul>
+            <li>one or more heading elements (&lt;h1&gt; - &lt;h6&gt;)</li>
+            <li>logo or icon</li>
+            <li>authorship information</li>
+          </ul>
+        <br><br>
+        <span class="TipBox">
+          <strong>Note:</strong> You can have several <span class="RedGray">&lt;header&gt;</span> elements in one HTML document. However, <span class="RedGray">&lt;header&gt;</span> cannot be placed within a <span class="RedGray">&lt;footer&gt;</span> <span class="RedGray">&lt;address&gt;</span> or another <span class="RedGray">&lt;header&gt;</span> element.
+        </span>
+        <br><br>
+          <h3>Example</h3> 
+          A header for an &lt;article&gt;: 
+        <pre class="EX">
+          &lt;article&gt;
+            &lt;header&gt;
+              &lt;h1&gt;What Does WWF Do?&lt;/h1&gt;
+              &lt;p&gt;WWF's mission:&lt;/p&gt;
+            &lt;/header&gt;
+          &lt;p&gt;WWF's mission is to stop the degradation of our planet's natural environment, and build a future in which humans live in harmony with nature.&lt;/p&gt;
+          &lt;/article&gt;
+        </pre>
+      </p>
+    </section>
+    <br><br>
+    <section>
+      <h2 id="T8">HTML &lt;footer&gt; Element</h2>
+      <p>
+        The <span class="RedGray">&lt;footer&gt;</span> element defines a footer for a document or section.
+        <br><br>
+        A <span class="RedGray">&lt;footer&gt;</span> element typically contains:
+        <ul>
+          <li>authorship information</li>
+          <li>copyright information</li>
+          <li>contact information</li>
+          <li>sitemap</li>
+          <li>back to top links</li>
+          <li>related documents</li>
+        </ul>
+        You can have several <span class="RedGray">&lt;footer&gt;</span> elements in one document.
+        <br><br>
+        <h3>Example</h3>
+        A footer section in a document:
+        <pre class="EX">
+          &lt;footer&gt;
+            &lt;p&gt;Author: Hege Refsnes&lt;/p&gt;
+            &lt;p&gt;&lt;a href="mailto:hege@example.com"&gt;hege@example.com&lt;/a&gt;&lt;/p&gt;
+          &lt;/footer&gt;
+        </pre>
+      </p>
+    </section>
+    <br><br>
+    <section>
+      <h2 id="T9">HTML &lt;nav&gt; Element</h2>
+      <p>
+        The &lt;nav&gt; element defines a set of navigation links.
+        <span class="TipBox">
+          Notice that NOT all links of a document should be inside a <span class="RedGray">&lt;nav&gt;</span> element. The <span class="RedGray">&lt;nav&gt;</span> element is intended only for major block of navigation links.
+      
+          Browsers, such as screen readers for disabled users, can use this element to determine whether to omit the initial rendering of this content.
+        </span>
+      </p>
+    </section>
+    <br><br>
+    <section>
+      <h2 id="T10">HTML &lt;aside&gt; Element</h2>
+      <p>
+        The <span class="RedGray">&lt;aside&gt;</span> element defines some content aside from the content it is placed in (like a sidebar).        
+        <br><br>
+        The <span class="RedGray">&lt;aside&gt;</span> content should be indirectly related to the surrounding content.
+        <br><br>
+        <h3>Example</h3>
+        A footer section in a document:
+        <pre class="EX">
+            &lt;p&gt;I love chicken. among them i love padark&lt;/p&gt;
+            &lt;article&gt;
+            &lt;h4&gt;padark&lt;h4&gt;
+            &lt;p&gt;padark is pa+chicken&lt;/p&gt;
+            &lt;/article&gt;
+        </pre>
+      </p>
+    </section>
+    <br><br>
+    <section>
+      <h2 id="T11">HTML &lt;figure&gt; and &lt;figcaption&gt; Element</h2>
+      <p>
+        The <span class="RedGray">&lt;figure&gt;</span> tag specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.
+        <br><br>
+        The <span class="RedGray">&lt;figcaption&gt;</span> tag defines a caption for a <span class="RedGray">&lt;figure&gt;</span> element. The <span class="RedGray">&lt;figcaption&gt;</span> element can be placed as the first or as the last child of a <span class="RedGray">&lt;figure&gt;</span> element.
+        <br><br>
+        The <span class="RedGray">&lt;img&gt;</span> element defines the actual image/illustration.
+        <h3>Example</h3>
+        <pre class="EX">
+            &lt;figure&gt;
+            &lt;img src="/HTML/smily.jpg" alt="smliy"&gt;
+            &lt;figcaption&gt;smily&lt;/figcaption&gt;
+            &lt;/figure&gt;
+        </pre>
+      </p>
+    </section>
+    <br><br>
+    <section>
+      <h2 id="T12">Why Semantic Elements?</h2>
+      <p>
+        According to the W3C: "A semantic Web allows data to be shared and reused across applications, enterprises, and communities."
+      </p>
+    </section>
+    <br><br>
+    <section>
+      <h2 id="T13">Semantic Elements in HTML</h2>
+      <p>
+        Below is a list of some of the semantic elements in HTML.
+        <table>
+          <tr>
+            <th>Tag</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td>&lt;article&gt;</td>
+            <td>Defines independent, self-contained content</td>
+          </tr>
+          <tr>
+            <td><&lt;aside&gt;/td>
+            <td>Defines content aside from the page content</td>
+          </tr>
+          <tr>
+            <td>&lt;details&gt;</td>
+            <td>Defines additional details that the user can view or hide</td>
+          </tr>
+          <tr>
+            <td>&lt;figcaption&gt;</td>
+            <td>Defines a caption for a &lt;figure&gt; element</td>
+          </tr>
+          <tr>
+            <td>&lt;figure&gt;</td>
+            <td>Specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.</td>
+          </tr>
+          <tr>
+            <td>&lt;footer&gt;</td>
+            <td>Defines a footer for a document or section</td>
+          </tr>
+          <tr>
+            <td>&lt;header&gt;</td>
+            <td>Specifies a header for a document or section</td>
+          </tr>
+          <tr>
+            <td>&lt;main&gt;</td>
+            <td>Specifies the main content of a document</td>
+          </tr>
+          <tr>
+            <td>&lt;mark&gt;</td>
+            <td>Defines marked/highlighted text</td>
+          </tr>
+          <tr>
+            <td>&lt;nav&gt;</td>
+            <td>Defines navigation links</td>
+          </tr>
+          <tr>
+            <td>&lt;section&gt;</td>
+            <td>Defines a section in a document</td>
+          </tr>
+          <tr>
+            <td>&lt;summary&gt;</td>
+            <td>Defines a visible heading for a &lt;details&gt; element</td>
+          </tr>
+          <tr>
+            <td>&lt;time&gt;</td>
+            <td>Defines a date/time</td>
+          </tr>
+        </table>
+      </p>
+    </section>
+  </main>
+</body>
+
+</html>

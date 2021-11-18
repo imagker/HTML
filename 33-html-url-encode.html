@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>HTML Uniform Resource Locators</title>
+  <link href="/HTML/CSS/styles.css" rel="stylesheet">
+  <link href="/HTML/images/favicon.ico" rel="shortcut icon">
+  <style>
+    .ul {
+      font-size: 10pt;
+      list-style-type: none;
+      margin: 00;
+      padding: 00;
+      overflow: hidden;
+      background-color: #333333;
+    }
+
+    .li {
+      float: left;
+    }
+
+    .li a {
+      display: block;
+      color: rgb(0, 187, 0);
+      text-align: center;
+      padding-top: 1em;
+      padding-bottom: 1em;
+      padding-left: 3em;
+      padding-right: 3em;
+      text-decoration: none;
+    }
+
+    .li a:hover {
+      background-color: whitesmoke;
+    }
+
+    @media screen and (max-width: 800px) {
+      .li {
+        width: 50%;
+        /* The width is 100%, when the viewport is 800px or smaller */
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <ul class="ul">
+      <li class="li">
+        <a href="#T1">HTML Uniform Resource Locators</a>
+      </li>
+      <li class="li">
+        <a href="#T2">URL - Uniform Resource Locator</a>
+      </li>
+      <li class="li">
+        <a href="#T3">Common URL Schemes</a>
+      </li>
+      <li class="li">
+        <a href="#T4">URL Encoding</a>
+      </li>
+      <li class="li">
+        <a href="#T5">Try It Yourself</a>
+      </li>
+      <li class="li">
+        <a href="#T6">ASCII Encoding Examples</a>
+      </li>
+    </ul>
+  </nav><br>
+  <main>
+    <section>
+      <header>
+        <h1 id="T1"><a href="https://www.w3schools.com/html/html_urlencode.asp">HTML Uniform Resource Locators</a></h1>
+      </header>
+      <p>A URL is another word for a web address.
+      <br><br>
+      A URL can be composed of words (e.g. w3schools.com), or an Internet Protocol (IP) address (e.g. 192.68.20.50).
+      <br><br>
+      Most people enter the name when surfing, because names are easier to remember than numbers.</p>
+    </section><br><br>
+    <section>
+      <header>
+        <h2 id="T2">URL - Uniform Resource Locator</h2>
+      </header>
+      <p>Web browsers request pages from web servers by using a URL.
+      <br><br>
+      A Uniform Resource Locator (URL) is used to address a document (or other data) on the web.
+      <br><br>
+      A web address like https://www.w3schools.com/html/default.asp follows these syntax rules:</p><br>
+      <div class="EX">
+        scheme://prefix.domain:port/path/filename
+      </div><br>
+      Explanation:
+      <ul>
+        <li><strong>scheme</strong> - defines the <strong>type</strong> of Internet service (most common is <strong>http or https</strong>) </li>
+        <li><strong>prefix</strong> - defines a domain <strong>prefix</strong> (default for http is <strong>www</strong>) </li>
+        <li><strong>domain</strong> - defines the Internet <strong>domain name</strong>(like w3schools.com) </li>
+        <li><strong>port</strong> - defines the <strong>port number</strong> at the host (default for http is <strong>80</strong>) </li>
+        <li><strong>path</strong> - defines a <strong>path</strong> at the server (If omitted: the root directory of the site) </li>
+        <li><strong>filename</strong> - defines the name of a document or resource</li>
+      </ul>
+    </section><br><br>
+    <section>
+      <header>
+        <h2 id="T3">Common URL Schemes</h2>
+      </header>
+      <p>The table below lists some common schemes:</p>
+      <table>
+        <tr>
+          <th>Scheme</th>
+          <th>Short for</th>
+          <th>Used for</th>
+        </tr>
+        <tr>
+          <td>http</td>
+          <td>HyperText Transfer Protocol</td>
+          <td>Protocol Common web pages. Not encrypted</td>
+        </tr>
+        <tr>
+          <td>https</td>
+          <td>Secure HyperText Transfer Protocol</td>
+          <td>Secure web pages. Encrypted</td>
+        </tr>
+        <tr>
+          <td>ftp</td>
+          <td>File Transfer Protocol</td>
+          <td>Downloading or uploading files</td>
+        </tr>
+        <tr>
+          <td>file</td>
+          <td></td>
+          <td>A file on your computer</td>
+        </tr>
+      </table>
+    </section><br><br>
+    <section>
+      <header>
+        <h2 id="T4">URL Encoding</h2>
+      </header>
+      <p>URLs can only be sent over the Internet using the ASCII character-set. If a URL contains characters outside the ASCII
+      set, the URL has to be converted.
+      <br><br>
+      URL encoding converts non-ASCII characters into a format that can be transmitted over the Internet.
+      <br><br>
+      URL encoding replaces non-ASCII characters with a "%" followed by hexadecimal digits.
+      <br><br>
+      URLs cannot contain spaces. URL encoding normally replaces a space with a plus (+) sign, or %20.
+      </p>
+    </section>
+    </section><br><br>
+    <section>
+      <header>
+        <h2 id="T5">Try It Yourself</h2>
+      </header>
+      <p>Try it on <a href="https://www.w3schools.com/html/html_urlencode.asp">w3schools</a></p>
+    </section>
+    </section><br><br>
+    <section>
+      <header>
+        <h2 id="T6">ASCII Encoding</h2>
+      </header>
+      <p>Your browser will encode input, according to the character-set used in your page.
+      <br><br>  
+      The default character-set in HTML5 is UTF-8.</p>
+    </section>
+  </main>
+</body>
+
+</html>

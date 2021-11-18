@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>HTML Versus XHTML</title>
+  <link href="/HTML/CSS/styles.css" rel="stylesheet">
+  <link href="/HTML/images/favicon.ico" rel="shortcut icon">
+  <style>
+    .ul {
+      font-size: 10pt;
+      list-style-type: none;
+      margin: 00;
+      padding: 00;
+      overflow: hidden;
+      background-color: #333333;
+    }
+
+    .li {
+      float: left;
+    }
+
+    .li a {
+      display: block;
+      color: rgb(0, 187, 0);
+      text-align: center;
+      padding-top: 1em;
+      padding-bottom: 1em;
+      padding-left: 3em;
+      padding-right: 3em;
+      text-decoration: none;
+    }
+
+    .li a:hover {
+      background-color: whitesmoke;
+    }
+
+    @media screen and (max-width: 800px) {
+      .li {
+        width: 50%;
+        /* The width is 100%, when the viewport is 800px or smaller */
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <ul class="ul">
+      <li class="li">
+        <a href="#T1">HTML Versus XHTML</a>
+      </li>
+      <li class="li">
+        <a href="#T2">What is XHTML?</a>
+      </li>
+      <li class="li">
+        <a href="#T3">Why XHTML?</a>
+      </li>
+      <li class="li">
+        <a href="#T4">The Most Important Differences from HTML</a>
+      </li>
+    </ul>
+  </nav><br>
+  <main>
+    <section>
+      <header>
+        <h1 id="T1"><a href="https://www.w3schools.com/html/html_xhtml.asp">HTML Versus XHTML</a></h1>
+      </header>
+      <p>XHTML is a stricter, more XML-based version of HTML.</p>
+    </section><br><br>
+    <section>
+      <header>
+        <h2 id="T2">What is XHTML?</h2>
+      </header>
+      <ul>
+        <li>
+          XHTML stands for E<strong>X</strong>tensible <strong>H</strong>yper<strong>T</strong>ext <strong>H</strong>arkup <strong>L</strong>anguage
+        </li>
+        <li>XHTML is a stricter, more XML-based version of HTML</li>
+        <li>XHTML is HTML defined as an XML application</li>
+        <li>XHTML is supported by all major browsers</li>
+      </ul>
+    </section><br><br>
+    <section>
+      <header>
+        <h2 id="T3">Why XHTML?</h2>
+      </header>
+      <p>XML is a markup language where all documents must be marked up correctly (be "well-formed").
+      
+      XHTML was developed to make HTML more extensible and flexible to work with other data formats (such as XML). In
+      addition, browsers ignore errors in HTML pages, and try to display the website even if it has some errors in the markup.
+      So XHTML comes with a much stricter error handling.
+      
+      If you want to study XML, please read our <a href="https://www.w3schools.com/xml/default.asp">XML Tutorial.</a></p>
+    </section><br><br>
+    <section>
+      <header>
+        <h2 id="T4">The Most Important Differences from HTML</h2>
+      </header>
+      <ul>
+        <li>&#60;!DOCTYPE&#62; is <strong>mandatory</strong></li>
+        <li>The xmlns attribute in <html> is <strong>mandatory</strong></li>
+        <li>&lt;html&gt;, &lt;head&gt;, &lt;title&gt;, and &lt;body&gt; are <strong>mandatory</strong></li>
+        <li>Elements must always be <strong>properly nested</strong></li>
+        <li>Elements must always be <strong>closed</strong></li>
+        <li>Elements must always be in <strong>lowercase</strong></li>
+        <li>Attribute names must always be in <strong>lowercase</strong></li>
+        <li>Attribute values must always be <strong>quoted</strong></li>
+        <li>Attribute minimization is <strong>forbidden</strong></li>
+      </ul>
+    </section>
+  </main>
+</body>
+
+</html>

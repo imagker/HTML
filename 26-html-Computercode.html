@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Computer Code Elements</title>
+  <link rel="stylesheet" href="/HTML/CSS/styles.css">
+  <link rel="shortcut icon" href="/HTML/images/favicon.ico">
+  <style>
+    .ul {
+      font-size: 10pt;
+      list-style-type: none;
+      margin: 00;
+      padding: 00;
+      overflow: hidden;
+      background-color: #333333;
+    }
+
+    .li {
+      float: left;
+    }
+
+    .li a {
+      display: block;
+      color: rgb(0, 187, 0);
+      text-align: center;
+      padding-top: 1em;
+      padding-bottom: 1em;
+      padding-left: 3em;
+      padding-right: 3em;
+      text-decoration: none;
+    }
+
+    .li a:hover {
+      background-color: whitesmoke;
+    }
+
+    @media screen and (max-width: 800px) {
+      .li {
+        width: 50%;
+        /* The width is 100%, when the viewport is 800px or smaller */
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <ul class="ul">
+      <li class="li"><a href="#T1">HTML Computer Code Elements</a></li>
+      <li class="li"><a href="#T2">HTML &lt;kbd&gt; For Keyboard Input</a></li>
+      <li class="li"><a href="#T3">HTML &lt;samp&gt; For Program Output</a></li>
+      <li class="li"><a href="#T4">HTML &lt;code&gt; For Computer Code</a></li>
+      <li class="li"><a href="#T5">HTML &lt;var&gt; For Variables</a></li>
+    </ul>
+  </header>
+  <br>
+  <main>
+    <section>
+      <h1 id="T1"><a href="https://www.w3schools.com/html/html_computercode_elements.asp">HTML Computer Code Elements</a></h1>
+      <p>
+        HTML contains several elements for defining user input and computer code.
+      </p>
+    </section>
+    <br><br>
+    <section>
+      <h2 id="T2">HTML &lt;kbd&gt; For Keyboard Input</h2>
+      <p>
+        The HTML <span class="RedGray">&lt;kbd&gt;</span> element is used to define keyboard input. The content inside is
+        displayed in the browser's default monospace font.
+        <br><br>
+        <kbd class="EX">
+          this 
+          is 
+          kbd code
+        </kbd>
+      </p>
+    </section>
+    <br><br>
+    <section>
+      <h2 id="T3">HTML &lt;samp&gt; For Program Output</h2>
+      <p>
+        The HTML <span class="RedGray">&lt;samp&gt;</span> element is used to define sample output from a computer program. The
+        content inside is displayed in the browser's default monospace font.
+        <br><br>
+        <span class="EX">
+          <samp>
+            this 
+            is 
+            samp code
+          </samp>
+        </span>
+      </p>
+    </section>
+    <br><br>
+    <section>
+      <h2 id="T4">HTML &lt;code&gt; For Computer Code</h2>
+      <p>
+        The HTML <code> element  is used to define a piece of computer code. The content inside is displayed in the browser's default monospace font.
+        <br><br>
+        <span class="EX">
+          <code>
+          this 
+          is 
+          code code
+          </code>
+        </span>
+        <br><br>
+        Notice that the <span class="RedGray">&lt;code&gt;</span> element does not preserve extra whitespace and line-breaks.
+        <br><br>
+        To fix this, you can put the <span class="RedGray">&lt;code&gt;</span> element inside a <span class="RedGray">&lt;pre&gt;</span> element:
+      </p>
+    </section>
+    <br><br>
+    <section>
+      <h2 id="T5">HTML &lt;var&gt; For Variables</h2>
+      <p>
+        The HTML <span class="RedGray">&lt;var&gt;</span> element is used to define a variable in programming or in a mathematical expression. The content inside is typically displayed in italic.
+        <br><br>
+        <span class="EX">
+          <var>
+            this 
+            is 
+            var code
+          </var>
+        </span>
+      </p>
+    </section>
+  </main>
+</body>
+
+</html>

@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Style Guide</title>
+  <link rel="stylesheet" href="/HTML/CSS/styles.css">
+  <link rel="shortcut icon" href="/HTML/images/favicon.ico">
+  <style>
+    .ul {
+      font-size: 10pt;
+      list-style-type: none;
+      margin: 00;
+      padding: 00;
+      overflow: hidden;
+      background-color: #333333;
+    }
+
+    .li {
+      float: left;
+    }
+
+    .li a {
+      display: block;
+      color: rgb(0, 187, 0);
+      text-align: center;
+      padding-top: 1em;
+      padding-bottom: 1em;
+      padding-left: 3em;
+      padding-right: 3em;
+      text-decoration: none;
+    }
+
+    .li a:hover {
+      background-color: whitesmoke;
+    }
+
+    @media screen and (max-width: 800px) {
+      .li {
+        width: 50%;
+        /* The width is 100%, when the viewport is 800px or smaller */
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <ul class="ul">
+      <li class="li"><a href="#T1">HTML Style Guide</a></li>
+      <li class="li"><a href="#T2">Always Declare Document Type</a></li>
+      <li class="li"><a href="#T3">Use Lowercase Element Names</a></li>
+      <li class="li"><a href="#T4">Close All HTML Elements</a></li>
+      <li class="li"><a href="#T5">Use Lowercase Attribute Names</a></li>
+      <li class="li"><a href="#T6">Always Quote Attribute Values</a></li>
+      <li class="li"><a href="#T7">Always Specify alt, width, and height for Images</a></li>
+      <li class="li"><a href="#T8">Spaces and Equal Signs</a></li>
+      <li class="li"><a href="#T9">Avoid Long Code Lines</a></li>
+      <li class="li"><a href="#T10">Blank Lines and Indentation</a></li>
+      <li class="li"><a href="#T11">Never Skip the &lt;title&gt; Element</a></li>
+      <li class="li"><a href="#T12">Omitting &lt;html&gt; and &lt;body&gt;?</a></li>
+      <li class="li"><a href="#T13">Omitting &lt;head&gt;?</a></li>
+      <li class="li"><a href="#T14">Close Empty HTML Elements?</a></li>
+      <li class="li"><a href="#T15">Add the lang Attribute</a></li>
+      <li class="li"><a href="#T16">Meta Data</a></li>
+      <li class="li"><a href="#T17">Setting The Viewport</a></li>
+      <li class="li"><a href="#T18">HTML Comments</a></li>
+      <li class="li"><a href="#T19">Using Style Sheets</a></li>
+      <li class="li"><a href="#T20">Loading JavaScript in HTML</a></li>
+      <li class="li"><a href="#T21">Accessing HTML Elements with JavaScript</a></li>
+      <li class="li"><a href="#T22">Use Lower Case File Names</a></li>
+      <li class="li"><a href="#T23">File Extensions</a></li>
+      <li class="li"><a href="#T24">Differences Between .htm and .html?</a></li>
+      <li class="li"><a href="#T25">Default Filenames</a></li>
+    </ul>
+  </header>
+  <br>
+  <main>
+    <section>
+      <h1 id="T1"><a href="https://www.w3schools.com/html/html5_syntax.asp">HTML Style Guide</a></h1>
+      <p>
+        A consistent, clean, and tidy HTML code makes it easier for others to read and understand your code.
+        <br><br>
+        Here are some guidelines and tips for creating good HTML code.
+      </p>
+    </section>
+    <br><br>
+    <section>
+      <h2 id="T2">Always Declare Document Type</h2>
+      <p>
+        Always declare the document type as the first line in your document.
+        <br><br>
+        The correct document type for HTML is:
+        <p class="EX">
+          &lt;!DOCTYPE html&gt;
+        </p>
+      </p>
+    </section>
+    <br><br>
+    <section>
+      <h2 id="T3">Use Lowercase Element Names</h2>
+      <p>
+        HTML allows mixing uppercase and lowercase letters in element names.
+        <br><br>
+        However, we recommend using lowercase element names, because:
+        <ul>
+          <li>Mixing uppercase and lowercase names looks bad</li>
+          <li>Developers normally use lowercase names</li>
+          <li>Lowercase looks cleaner</li>
+          <li>Lowercase is easier to write</li>
+        </ul>
+      </p>
+    </section>
+    <br><br>
+    <section>
+      <h2 id="T4">Close All HTML Elements</h2>
+      <p>
+        In HTML, you do not have to close all elements (for example the &lt;p&gt; element).
+        <br><br>
+        However, we strongly recommend closing all HTML elements, like this:
+      </p>
+    </section>
+    <br><br>
+    <section>
+      <h2 id="T5">Use Lowercase Attribute Names</h2>
+      <p>
+        HTML allows mixing uppercase and lowercase letters in attribute names.
+        <br><br>
+        However, we recommend using lowercase attribute names, because:
+        <ul>
+          <li>Mixing uppercase and lowercase names looks bad</li>
+          <li>Developers normally use lowercase names</li>
+          <li>Lowercase look cleaner</li>
+          <li>Lowercase are easier to write</li>
+        </ul>
+      </p>
+    </section>
+    <br><br>
+    <section>
+      <h2 id="T6">Always Quote Attribute Values</h2>
+      <p>
+        HTML allows attribute values without quotes.
+        <br><br>
+        However, we recommend quoting attribute values, because:
+        <ul>
+          <li>Developers normally quote attribute values</li>
+          <li>Quoted values are easier to read</li>
+          <li>You MUST use quotes if the value contains spaces</li>
+        </ul>
+      </p>
+    </section>
+    <br><br>
+    <section>
+      <h2 id="T7">Always Specify alt, width, and height for Images</h2>
+      <p>
+        Always specify the <span class="RedGray">alt</span> attribute for images. This attribute is important if the image for some reason cannot be
+        displayed.
+        <br><br>
+        Also, always define the <span class="RedGray">width</span> and <span class="RedGray">height</span> of images. This reduces flickering, because the browser can reserve space for the image before loading.
+      </p>
+    </section>
+    <br><br>
+    <section>
+      <h2 id="T8">Spaces and Equal Signs</h2>
+      <p>
+        HTML allows spaces around equal signs. But space-less is easier to read and groups entities better together.
+      </p>
+    </section>
+    <br><br>
+    <section>
+      <h2 id="T9">Avoid Long Code Lines</h2>
+      <p>
+        When using an HTML editor, it is NOT convenient to scroll right and left to read the HTML code.
+        <br><br>
+        Try to avoid too long code lines.
+      </p>
+    </section>
+    <br><br>
+    <section>
+      <h2 id="T10">Blank Lines and Indentation</h2>
+      <p>
+        Do not add blank lines, spaces, or indentations without a reason.
+        <br><br>
+        For readability, add blank lines to separate large or logical code blocks.
+        <br><br>
+        For readability, add two spaces of indentation. Do not use the tab key.
+      </p>
+    </section>
+    <br><br>
+    <section>
+      <h2 id="T11">Never Skip the &lt;title&gt; Element</h2>
+      <p>
+        The <span class="RedGray">&lt;title&gt;</span> element is required in HTML.
+        <br><br>
+        The contents of a page title is very important for search engine optimization (SEO)! The page title is used by search engine algorithms to decide the order when listing pages in search results.
+        <br></br>
+        The <span class="RedGray">&lt;title&gt;</span> element:
+          <ul>
+            <li>defines a title in the browser toolbar</li>
+            <li>provides a title for the page when it is added to favorites</li>
+            <li>displays a title for the page in search-engine results</li>
+          </ul>
+        So, try to make the title as accurate and meaningful as possible:
+      </p>
+    </section>
+    <br><br>
+    <section>
+      <h2 id="T12">Omitting &lt;html&gt; and &lt;body&gt;?</h2>
+      <p>
+        An HTML page will validate without the <span class="RedGray">&lt;html&gt;</span> and <span class="RedGray">&lt;body&gt;</span> tags:
+        <br><br>
+        However, we strongly recommend to always add the <html> and <span class="Redgray">&lt;body&gt;</span> tags!
+        
+        Omitting <span class="RedGray">&lt;body&gt;</span> can produce errors in older browsers.
+        
+        Omitting <span class="RedGray">&lt;html&gt;</span> and <span class="RedGray">&lt;body&gt;</span> can also crash DOM and XML software.
+      </p>
+    </section>
+    <br><br>
+    <section>
+      <h2 id="T13">Omitting &lt;head&gt;?</h2>
+      <p>
+        The HTML <span class="RedGray">&lt;head&gt;</span> tag can also be omitted.
+        <br><br>
+        Browsers will add all elements before <span class="RedGray">&lt;body&gt;</span>, to a default <span class="RedGray">&lt;head&gt;</span> element.
+        <br><br>
+        However, we recommend using the <span class="RedGray">&lt;head&gt;</span> tag.
+      </p>
+    </section>
+    <br><br>
+    <section>
+      <h2 id="T14">Close Empty HTML Elements?</h2>
+      <p>
+        In HTML, it is optional to close empty elements.
+        <br><br>
+        If you expect XML/XHTML software to access your page, keep the closing slash (/), because it is required in XML and XHTML.
+      </p>
+    </section>
+    <br><br>
+    <section>
+      <h2 id="T15">Add the lang Attribute</h2>
+      <p>
+        You should always include the <span class="RedGray">lang</span> attribute inside the <span class="RedGray">&lt;html&gt;</span> tag, to declare the language of the Web page. This is meant to assist search engines and browsers.
+      </p>
+    </section>
+    <br><br>
+    <section>
+      <h2 id="T16">Meta Data</h2>
+      <p>
+        To ensure proper interpretation and correct search engine indexing, both the language and the character encoding <span class="RedGray">&lt;meta charset="charset"&gt;</span>should be defined as early as possible in an HTML document:
+      </p>
+    </section>
+    <br><br>
+    <section>
+      <h2 id="T17">Setting The Viewport</h2>
+      <p>
+        The viewport is the user's visible area of a web page. It varies with the device - it will be smaller on a mobile phone than on a computer screen.
+        <br><br>
+        You should include the following <span class="RedGray">&lt;meta&gt;</span> element in all your web pages:
+        <p class="EX">
+          &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+        </p>
+        This gives the browser instructions on how to control the page's dimensions and scaling.
+        <br><br>
+        The <span class="RedGray">width=device-width</span> part sets the width of the page to follow the screen-width of the device (which will vary depending on the device).
+        <br><br>
+        The <span class="RedGray">initial-scale=1.0</span> part sets the initial zoom level when the page is first loaded by the browser.
+        <br><br>
+        Here is an example of a web page without the viewport meta tag, and the same web page with the viewport meta tag:
+      </p>
+    </section>
+    <br><br>
+    <section>
+      <h2 id="T18">HTML Comments</h2>
+      <p>
+        Short comments should be written on one line, like this:
+        <p class="EX">
+          &lt;!-- This is a comment --&gt;
+        </p>
+        Comments that spans more than one line, should be written like this:
+        <p class="EX">
+          &lt;!--
+            This is a long comment example. This is a long comment example.
+            This is a long comment example. This is a long comment example.
+          --&gt;
+        Long comments are easier to observe if they are indented with two spaces.
+        </p>
+      </p>
+    </section>
+    <br><br>
+    <section>
+      <h2 id="T19">Using Style Sheets</h2>
+      <p>
+        Use simple syntax for linking to style sheets (the <span class="RedGray">type</span> attribute is not necessary):
+        <p class="EX">
+          &lt;link rel="stylesheet" href="styles.css"&gt;
+        </p>
+        Short CSS rules can be written compressed, like this:
+        <p class="EX">
+          p.intro {font-family:Verdana;font-size:16em;}
+        </p>
+        Long CSS rules should be written over multiple lines:
+        <p class="EX">
+          body {<br>
+          background-color: lightgrey;<br>
+          font-family: "Arial Black", Helvetica, sans-serif;<br>
+          font-size: 16em;<br>
+          color: black;<br>
+          }
+        </p>
+        <ul>
+          <li>Place the opening bracket on the same line as the selector</li>
+          <li>Use one space before the opening bracket</li>
+          <li>Use two spaces of indentation</li>
+          <li>Use semicolon after each property-value pair, including the last</li>
+          <li>Only use quotes around values if the value contains spaces</li>
+          <li>Place the closing bracket on a new line, without leading spaces</li>
+        </ul>
+      </p>
+    </section>
+    <br><br>
+    <section>
+      <h2 id="T20">Loading JavaScript in HTML</h2>
+      <p>
+        Use simple syntax for for loading external scripts (the <span class="RedGray">type</span> attribute is not necessary):
+        <p class="EX">
+          &lt;script src="myscript.js"&gt;
+        </p>
+      </p>
+    </section>
+  </main>
+    <br><br>
+    <section>
+      <h2 id="T21">Accessing HTML Elements with JavaScript</h2>
+      <p>
+        Using "untidy" HTML code can result in JavaScript errors.
+      </p>
+    </section>
+  </main>
+    <br><br>
+    <section>
+      <h2 id="T22">Use Lower Case File Names</h2>
+      <p>
+        Some web servers (Apache, Unix) are case sensitive about file names: "london.jpg" cannot be accessed as "London.jpg".
+        <br><br>
+        Other web servers (Microsoft, IIS) are not case sensitive: "london.jpg" can be accessed as "London.jpg".
+        <br><br>
+        If you use a mix of uppercase and lowercase, you have to be aware of this.
+        <br><br>
+        If you move from a case-insensitive to a case-sensitive server, even small errors will break your web!
+        <br><br>
+        To avoid these problems, always use lowercase file names!
+      </p>
+    </section>
+  </main>
+    <br><br>
+    <section>
+      <h2 id="T23">File Extensions</h2>
+      <p>
+        HTML files should have a <strong>.html</strong> extension (.htm is allowed).
+        <br><br>
+        CSS files should have a <strong>.css</strong> extension.
+        <br><br>
+        JavaScript files should have a <strong>.js</strong> extension.
+      </p>
+    </section>
+  </main>
+    <br><br>
+    <section>
+      <h2 id="T24">Differences Between .htm and .html?</h2>
+      <p>
+        There is no difference between the .htm and .html file extensions!
+        <br><br>
+        Both will be treated as HTML by any web browser and web server.
+      </p>
+    </section>
+  </main>
+    <br><br>
+    <section>
+      <h2 id="T25">Default Filenames</h2>
+      <p>
+        When a URL does not specify a filename at the end (like "https://www.w3schools.com/"), the server just adds a default filename, such as "index.html", "index.htm", "default.html", or "default.htm".
+        <br><br>
+        If your server is configured only with "index.html" as the default filename, your file must be named "index.html", and not "default.html".
+        <br><br>
+        However, servers can be configured with more than one default filename; usually you can set up as many default filenames as you want.
+      </p>
+    </section>
+  </main>
+</body>
+
+</html>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>HTML Entities</title>
+  <link href="/HTML/CSS/styles.css" rel="stylesheet">
+  <link href="/HTML/images/favicon.ico" rel="shortcut icon">
+  <style>
+    .ul {
+      font-size: 10pt;
+      list-style-type: none;
+      margin: 00;
+      padding: 00;
+      overflow: hidden;
+      background-color: #333333;
+    }
+
+    .li {
+      float: left;
+    }
+
+    .li a {
+      display: block;
+      color: rgb(0, 187, 0);
+      text-align: center;
+      padding-top: 1em;
+      padding-bottom: 1em;
+      padding-left: 3em;
+      padding-right: 3em;
+      text-decoration: none;
+    }
+
+    .li a:hover {
+      background-color: whitesmoke;
+    }
+
+    @media screen and (max-width: 800px) {
+      .li {
+        width: 50%;
+        /* The width is 100%, when the viewport is 800px or smaller */
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <ul class="ul">
+      <li class="li">
+        <a href="#T1">HTML Entities</a>
+      </li>
+      <li class="li">
+        <a href="#T2">HTML Entities</a>
+      </li>
+      <li class="li">
+        <a href="#T3">Non-breaking Space</a>
+      </li>
+      <li class="li">
+        <a href="#T4">Some Useful HTML Character Entities</a>
+      </li>
+      <li class="li">
+        <a href="#T5">Combining Diacritical Marks</a>
+      </li>
+    </ul>
+  </nav><br>
+  <main>
+    <section>
+      <header>
+        <h1 id="T1"><a href="https://www.w3schools.com/html/html_entities.asp">HTML Entities</a></h1>
+      </header>
+      <p>Reserved characters in HTML must be replaced with character entities.
+</p>
+    </section><br><br>
+    <section>
+      <header>
+        <h2 id="T2">HTML Entities</h2>
+      </header>
+      <p>Some characters are reserved in HTML. <br><br>
+      
+      If you use the less than (&lt;) or greater than (&gt;) signs in your text, the browser might mix them with tags. <br><br>
+      
+      Character entities are used to display reserved characters in HTML. <br><br>
+      
+      A character entity looks like this:
+      <pre class="EX">
+  &entity_name;
+
+  OR
+
+  &#entity_number;
+      </pre>
+      To display a less than sign (&lt;) we must write: &amp;lt; or &amp;#60; <br><br>
+      <div class="TipBox">
+      <strong>Advantage of using an entity name:</strong> An entity name is easy to remember. <br>
+      <strong>Disadvantage of using an entity name:</strong> Browsers may not support all entity names, but the support for entity numbers is good.</div></p>
+    </section><br><br>
+    <section>
+      <header>
+        <h2 id="T3">Non-breaking Space</h2>
+      </header>
+      <p>A commonly used entity in HTML is the non-breaking space: <strong>&amp;nbsp;</strong>
+      <br><br>
+      A non-breaking space is a space that will not break into a new line.
+      <br><br>
+      Two words separated by a non-breaking space will stick together (not break into a new line). This is handy when breaking the words might be disruptive.
+      <br><br>
+      Another common use of the non-breaking space is to prevent browsers from truncating spaces in HTML pages.
+      <br><br>
+      If you write 10 spaces in your text, the browser will remove 9 of them. To add real spaces to your text, you can use the nbsp; character entity. <br>
+      <div class="TipBox">
+        <strong>Tip:</strong> The non-breaking hyphen (&amp;#8209;) is used to define a hyphen character (‑) that does not break into a new line.
+      </div>
+      </p>
+    </section><br><br>
+    <section>
+      <header>
+        <h2 id="T4">Some Useful HTML Character Entities</h2>
+      </header>
+      <table>
+        <tr>
+          <th>Result</th>
+          <th>Description</th>
+          <th>Entity Name</th>
+          <th>Entity Number</th>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>non-breaking space</td>
+          <td>&amp;nbsp;</td>
+          <td>&amp;#160;</td>
+        </tr>
+        <tr>
+          <td>&lt;</td>
+          <td>less than</td>
+          <td>&amp;lt;</td>
+          <td>&amp;60;</td>
+        </tr>
+        <tr>
+          <td>&gt;</td>
+          <td>greater than</td>
+          <td>&amp;gt;</td>
+          <td>&amp;#62;</td>
+        </tr>
+        <tr>
+          <td>&amp;</td>
+          <td>ampersand</td>
+          <td>&amp;amp;</td>
+          <td>&amp;#38</td>
+        </tr>
+        <tr>
+          <td>&quot;</td>
+          <td>double quotation mark</td>
+          <td>&amp;quot;</td>
+          <td>&amp;#34;</td>
+        </tr>
+        <tr>
+          <td>&#38;</td>
+          <td>single quotation mark <br>(apostrophe)</td>
+          <td>&amp;apos;</td>
+          <td>&amp;#38</td>
+        </tr>
+        <tr>
+          <td>&#162;</td>
+          <td>cent</td>
+          <td>&amp;cent;</td>
+          <td>&amp;#162;</td>
+        </tr>
+        <tr>
+          <td>&#163;</td>
+          <td>pound</td>
+          <td>&amp;pound;</td>
+          <td>&amp;163;</td>
+        </tr>
+        <tr>
+          <td>&#165;</td>
+          <td>yen</td>
+          <td>&amp;yen;</td>
+          <td>&amp;#165;</td>
+        </tr>
+        <tr>
+          <td>&#8364;</td>
+          <td>euro</td>
+          <td>&amp;euro;</td>
+          <td>&amp;#8364;</td>
+        </tr>
+        <tr>
+          <td>&#169;</td>
+          <td>copyright</td>
+          <td>&amp;copy;</td>
+          <td>&amp;#169;</td>
+        </tr>
+        <tr>
+          <td>&#174;</td>
+          <td>registered trademark</td>
+          <td>&amp;reg;</td>
+          <td>&amp;#174;</td>
+        </tr>
+      </table>
+    </section>
+    </section><br><br>
+    <section>
+      <header>
+        <h2 id="T5">Combining Diacritical Marks</h2>
+      </header>
+      <p>A diacritical mark is a "glyph" added to a letter.
+      <br><br>
+      Some diacritical marks, like grave (&#768;) and acute (&#769;́) are called accents.
+      <br><br>
+      Diacritical marks can appear both above and below a letter, inside a letter, and between two letters.
+      <br><br>
+      Diacritical marks can be used in combination with alphanumeric characters to produce a character that is not present in
+      the character set (encoding) used in the page.
+      <br><br>
+      Here are some examples:</p>
+      <table>
+        <tr>
+          <th>Mark</th>
+          <th>Character</th>
+          <th>Construct</th>
+          <th>Result</th>
+        </tr>
+        <tr>
+          <td>&#768;</td>
+          <td>a</td>
+          <td>a&amp;#768;</td>
+          <td>a&#768;</td>
+        </tr>
+        <tr>
+          <td>&#769;</td>
+          <td>a</td>
+          <td>a&amp;#769;</td>
+          <td>a&#769;</td>
+        </tr>
+        <tr>
+          <td>&#770;</td>
+          <td>a</td>
+          <td>a&amp;#770;</td>
+          <td>a&#770;</td>
+        </tr>
+        <tr>
+          <td>&#771;</td>
+          <td>a</td>
+          <td>a&amp;#771;</td>
+          <td>a&#771;</td>
+        </tr>
+      </table>
+    </section>
+  </main>
+</body>
+
+</html>
