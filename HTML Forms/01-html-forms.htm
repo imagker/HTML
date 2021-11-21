@@ -1,23 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <h2>HTML Forms</h2>
-  
-  <form action="/action_page.php">
-    <label for="fname">First name:</label><br>
-    <input type="text" id="fname" name="fname" value="John"><br>
-    <label for="lname">Last name:</label><br>
-    <input type="text" id="lname" name="lname" value="Doe"><br><br>
-    <input type="submit" value="Submit">
-  </form>
-  
-  <p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>HTML Forms</title>
+  <link href="/HTML/CSS/styles.css" rel="stylesheet">
+  <link href="/HTML/images/favicon.ico" rel="shortcut icon">
+  <style>
+    .ul {
+      font-size: 10pt;
+      list-style-type: none;
+      margin: 00;
+      padding: 00;
+      overflow: hidden;
+      background-color: #333333;
+    }
 
+    .li {
+      float: left;
+    }
+
+    .li a {
+      display: block;
+      color: rgb(0, 187, 0);
+      text-align: center;
+      padding-top: 1em;
+      padding-bottom: 1em;
+      padding-left: 3em;
+      padding-right: 3em;
+      text-decoration: none;
+    }
+
+    .li a:hover {
+      background-color: whitesmoke;
+    }
+
+    @media screen and (max-width: 800px) {
+      .li {
+        width: 50%;
+        /* The width is 100%, when the viewport is 800px or smaller */
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <ul class="ul">
+      <li class="li">
+        <a href="#T1">HTML Forms</a>
+      </li>
+      <li class="li">
+        <a href="#T2">The &lt;form&gt; Element</a>
+      </li>
+      <li class="li">
+        <a href="#T3">The &lt;input&gt; Element</a>
+      </li>
+      <li class="li">
+        <a href="#T4">Text Fields</a>
+      </li>
+      <li class="li">
+        <a href="#T5">The &lt;label&gt; Element</a>
+      </li>
+      <li class="li">
+        <a href="#T5">The Name Attribute for &lt;input&gt;</a>
+      </li>
+    </ul>
+  </nav><br>
+  <main>
+    <section>
+      <header>
+        <h1 id="T1"><a href="https://www.w3schools.com/html/html_forms.asp">HTML Forms</a></h1>
+      </header>
+      <p>An HTML form is used to collect user input. The user input is most often sent to a server for processing.</p>
+    </section><br><br>
+    <section>
+      <header>
+        <h2 id="T2">The &lt;form&gt; Element</h2>
+      </header>
+      <p>The HTML <span class="RedGray">&lt;form&gt;</span> element is used to create an HTML form for user input:
+      <div class="EX" style="width: 50vw;">
+        &lt;form&gt; <br>
+        . <br>
+        <code>form elemetns</code> <br>
+        . <br>
+        &lt;form&gt; </div><br>
+      The HTML <span class="RedGray">&lt;form&gt;</span> element is a container for different types of input elements, such as: text fields, checkboxes, radio buttons, submit buttons,
+      etc. <br><br>
+      
+      All the different form elements are covered in this chapter: <a href="https://www.w3schools.com/html/html_form_elements.asp">HTML Form Elements.</a>
+      
+      </p>
+    </section><br><br>
+    <section>
+      <header>
+        <h2 id="T3">The &lt;input&gt; Element</h2>
+      </header>
+      <p>The HTML <span class="RedGray">&lt;input&gt;</span> element is the most used form element. <br><br>
+      An <span class="RedGray">&lt;input&gt;</span> element can be displayed in many ways, depending on the <span class="RedGray">type</span> attribute:
+      <table>
+        <tr>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>&lt;input type="text"&gt;</td>
+          <td>Displays a single-line text input field</td>
+        </tr>
+        <tr>
+          <td>&lt;input type="radio"&gt;</td>
+          <td>Displays a radio button (for selecting one of many choices)</td>
+        </tr>
+        <tr>
+          <td>&lt;input type="checkbox"&gt;</td>
+          <td>Displays a checkbox (for selecting zero or more of many choices)</td>
+        </tr>
+        <tr>
+          <td>&lt;input type="submit"&gt;</td>
+          <td>Displays a submit button (for submitting the form)</td>
+        </tr>
+        <tr>
+          <td>&lt;input type="button"&gt;</td>
+          <td>Displays a clickable button</td>
+        </tr>  
+      </table><br>
+      All the different input types are covered in this chapter: <a href="https://www.w3schools.com/html/html_form_elements.asp">HTML Input Elements.</a>
+      </p>
+    </section><br><br>
+    <section>
+      <header>
+        <h2 id="T4">Text Fields</h2>
+      </header>
+      <p>The <span class="RedGray">&lt;input type="text"&gt;</span> defines a single-line input field for text input.
+      <div class="EX" style="width: 50vw;">
+        A form with input fields for text: <br><br>
+        <code>
+          &lt;form&gt; <br>
+            &lt;label for="fname"&gt;First name:&lt;/label&gt;&lt;br&gt; <br>
+            &lt;input type="text" id="fname" name="fname"&gt;&lt;br&gt; <br>
+            &lt;label for="lname"&gt;Last name:&lt;/label&gt;&lt;br&gt; <br>
+            &lt;input type="text" id="lname" name="lname"&gt; <br>
+          &lt;/form&gt;
+        </code>
+      </div><br>
+      This is how the HTML code above will be displayed in a browser: <br><br>
+      <form>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname">
+      </form></p>
+      <div class="TipBox" style="width: 50vw;">
+        <Strong>Note:</Strong> The form itself is not visible. Also note that the default width of an input field is 20 characters. </div>
+    </section><br><br>
+    <section>
+      <header>
+        <h2 id="T4">The &lt;label&gt; Element</h2>
+      </header>
+      <p>
+        Notice the use of the <span class="RedGray">&lt;label&gt;</span> element in the example above. <br><br>
+
+        The <span class="RedGray">&lt;label&gt;</span> tag defines a label for many form elements. <br><br>
+        
+        The <span class="RedGray">&lt;label&gt;</span> element is useful for screen-reader users, because the screen-reader will read out loud the label when the user focus on the input element.<br><br>
+      
+        The <span class="RedGray">&lt;label&gt;</span> element also help users who have difficulty clicking on very small regions (such as radio buttons or
+        checkboxes) - because when the user clicks the text within the <span class="RedGray">&lt;label&gt;</span> element, it toggles the radio button/ checkbox.<br><br>
+
+        The <span class="RedGray">for</span> attribute of the <span class="RedGray">&lt;label&gt;</span> tag should be equal to the <span class="RedGray">id</span> attribute of the <span class="RedGray">&lt;input&gt;</span> element to bind them together.
+      </p>
+    </section><br><br>
+    <section>
+      <header>
+        <h2 id="T4">The Name Attribute for &lt;input&gt;</h2>
+      </header>
+      <p>Notice that each input field must have a <span class="RedGray">name</span> attribute to be submitted.
+      
+      If the <span class="RedGray">name</span> attribute is omitted, the value of the input field will not be sent at all.</p>
+    </section>
+  </main>
 </body>
+
 </html>

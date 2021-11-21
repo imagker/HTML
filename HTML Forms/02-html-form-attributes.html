@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>HTML Form Attributes</title>
+  <link href="/HTML/CSS/styles.css" rel="stylesheet">
+  <link href="/HTML/images/favicon.ico" rel="shortcut icon">
+  <style>
+    .ul {
+      font-size: 10pt;
+      list-style-type: none;
+      margin: 00;
+      padding: 00;
+      overflow: hidden;
+      background-color: #333333;
+    }
+
+    .li {
+      float: left;
+    }
+
+    .li a {
+      display: block;
+      color: rgb(0, 187, 0);
+      text-align: center;
+      padding-top: 1em;
+      padding-bottom: 1em;
+      padding-left: 3em;
+      padding-right: 3em;
+      text-decoration: none;
+    }
+
+    .li a:hover {
+      background-color: whitesmoke;
+    }
+
+    @media screen and (max-width: 800px) {
+      .li {
+        width: 50%;
+        /* The width is 100%, when the viewport is 800px or smaller */
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <ul class="ul">
+      <li class="li">
+        <a href="#T1">HTML Form Attributes</a>
+      </li>
+      <li class="li">
+        <a href="#T2">The Action Attribute</a>
+      </li>
+      <li class="li">
+        <a href="#T3">The Target Attribute</a>
+      </li>
+      <li class="li">
+        <a href="#T4">The Method Attribute</a>
+      </li>
+      <li class="li">
+        <a href="#T5">The Autocomplete Attribute</a>
+      </li>
+      <li class="li">
+        <a href="#T6">The Novalidate Attribute</a>
+      </li>
+
+    </ul>
+  </nav><br>
+  <main>
+    <section>
+      <header>
+        <h1 id="T1"><a href="https://www.w3schools.com/html/html_forms_attributes.asp">HTML Form Attributes</a></h1>
+      </header>
+      <p>This chapter describes the different attributes for the HTML <span class="RedGray">&lt;form&gt;</span> element.</p>
+    </section><br><br>
+    <section>
+      <header>
+        <h2 id="T2">The Action Attribute</h2>
+      </header>
+      <p>The action attribute defines the <span class="RedGray">action</span> to be performed when the form is submitted.
+      <br><br>
+      Usually, the form data is sent to a file on the server when the user clicks on the submit button.
+      <br><br>
+      In the example below, the form data is sent to a file called "action_page.php". This file contains a server-side script that handles the form data. 
+      <br><br>
+      <strong>Tip:</strong> If the <span class="RedGray">action</span> attribute is omitted, the action is set to the  current page.
+      </p>
+    </section><br><br>
+    <section>
+      <header>
+        <h2 id="T3">The Target Attribute</h2>
+      </header>
+      <p>
+        The <span class="RedGray">target</span> attribute specifies where to display the response that is received after submitting the form.
+        <br><br>
+        The <span class="RedGray">target</span> attribute can have one of the following values:
+        <table>
+          <tr>
+            <th>Value</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td>_blank</td>
+            <td>The response is displayed in a new window or tab</td>
+          </tr>
+          <tr>
+            <td>_self</td>
+            <td>The response is displayed in the current window</td>
+          </tr>
+          <tr>
+            <td>_parent</td>
+            <td>The response is displayed in the parent frame</td>
+          </tr>
+          <tr>
+            <td>_top</td>
+            <td>The response is displayed in the full body of the window</td>
+          </tr>
+          <tr>
+            <td>framename</td>
+            <td>The response is displayed in a named iframe</td>
+          </tr>
+        </table>
+        <br>
+        The default value is <span class="RedGray">_self</span> which means that the response will open in the current window.
+        <br><br>
+        <div class="EX" style="width: 70vw;">
+          &lt;form action="/action_page.php" target="_blank"&gt;&lt;/form&gt;
+        </div>
+      </p>
+    </section><br><br>
+    <section>
+      <header>
+        <h2 id="T4">The Method Attribute</h2>
+      </header>method
+      <p>The <span class="RedGray">method</span> attribute specifies the HTTP method to be used when submitting the form data.
+      <br><br>
+      The form-data can be sent as URL variables (with <span class="RedGray">method="get"</span>) or as HTTP post transaction (with <span class="RedGray">method="post"</span>).
+      <br><br>
+      The default HTTP method when submitting form data is GET.
+      <br></br>
+      <ul><strong>Notes on GET:</strong>
+      <li>Appends the form data to the URL, in name/value pairs</li>
+      <li>NEVER use GET to send sensitive data! (the submitted form data is visible in the URL!)</li>
+      <li>The length of a URL is limited (2048 characters)</li>
+      <li>Useful for form submissions where a user wants to bookmark the result</li>
+      <li>GET is good for non-secure data, like query strings in Google</li>
+      </ul>
+      <ul><strong>Notes on POST:</strong>
+      <li>Appends the form data inside the body of the HTTP request (the submitted form data is not shown in the URL)</li>
+      <li>POST has no size limitations, and can be used to send large amounts of data.</li>
+      <li>Form submissions with POST cannot be bookmarked</li>
+      </ul>
+      </p>
+      <br>
+      <div class="TipBox"><strong>Tip:</strong> Always use POST if the form data contains sensitive or personal information!</div>
+    </section><br><br>
+    <section>
+      <header>
+        <h2 id="T5">The Autocomplete Attribute</h2>
+      </header>
+      <p>The <span class="RedGray">atocomplete</span> attribute specifies whether a form should have autocomplete on or off.
+      <br><br>
+      When autocomplete is on, the browser automatically complete values based on values that the user has entered before.</p>
+    </section><br><br>
+    <section>
+      <header>
+        <h2 id="T6">The Novalidate Attribute</h2>
+      </header>
+      <p>The <span class="RedGray">novalidate</span> attribute is a boolean attribute.
+      <br><br>
+      When present, it specifies that the form-data (input) should not be validated when submitted.</p>
+    </section>
+  </main>
+</body>
+
+</html>

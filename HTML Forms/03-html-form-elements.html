@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>HTML Form Elements</title>
+  <link href="/HTML/CSS/styles.css" rel="stylesheet">
+  <link href="/HTML/images/favicon.ico" rel="shortcut icon">
+  <style>
+    .ul {
+      font-size: 10pt;
+      list-style-type: none;
+      margin: 00;
+      padding: 00;
+      overflow: hidden;
+      background-color: #333333;
+    }
+
+    .li {
+      float: left;
+    }
+
+    .li a {
+      display: block;
+      color: rgb(0, 187, 0);
+      text-align: center;
+      padding-top: 1em;
+      padding-bottom: 1em;
+      padding-left: 3em;
+      padding-right: 3em;
+      text-decoration: none;
+    }
+
+    .li a:hover {
+      background-color: whitesmoke;
+    }
+
+    @media screen and (max-width: 800px) {
+      .li {
+        width: 50%;
+        /* The width is 100%, when the viewport is 800px or smaller */
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <ul class="ul">
+      <li class="li">
+        <a href="#T1">HTML Form Elements</a>
+      </li>
+      <li class="li">
+        <a href="#T2">The &lt;form&gt; Elements</a>
+      </li>
+      <li class="li">
+        <a href="#T3">The &lt;input&gt; Elements</a>
+      </li>
+      <li class="li">
+        <a href="#T4">The &lt;label&gt; Elements</a>
+      </li>
+      <li class="li">
+        <a href="#T5">The &lt;select&gt; Elements</a>
+      </li>
+      <li class="li">
+        <a href="#T6">The &lt;textarea&gt; Elements</a>
+      </li>
+      <li class="li">
+        <a href="#T7">The &lt;button&gt; Elements</a>
+      </li>
+      <li class="li">
+        <a href="#T8">The &lt;fieldset&gt; and &lt;legend&gt; Elements</a>
+      </li>
+      <li class="li">
+        <a href="#T9">The &lt;datalist&gt; Elements</a>
+      </li>
+      <li class="li">
+        <a href="#T10">The &lt;output&gt; Elements</a>
+      </li>
+    </ul>
+  </nav><br>
+  <main>
+    <section>
+      <header>
+        <h1 id="T1"><a href="https://www.w3schools.com/html/html_form_elements.asp">HTML Form Elements</a></h1>
+      </header>
+      <p>This chapter describes all the different HTML form elements.</p>
+    </section><br><br>
+    <section>
+      <header>
+        <h2 id="T2">The HTML &lt;form&gt; Elements</h2>
+      </header>
+      <p>
+        The HTML <span class="RedGray">&lt;form&gt;</span> element can contain one or more of the following form elements:
+        <ul>
+          <li>&lt;input&gt;</li>
+          <li>&lt;label&gt;</li>
+          <li>&lt;select&gt;</li>
+          <li>&lt;textarea&gt;</li>
+          <li>&lt;button&gt;</li>
+          <li>&lt;fieldset&gt;</li>
+          <li>&lt;legend&gt;</li>
+          <li>&lt;datalist&gt;</li>
+          <li>&lt;output&gt;</li>
+          <li>&lt;option&gt;</li>
+          <li>&lt;optgroup&gt;</li>
+        </ul>
+      </p>
+    </section><br><br>
+    <section>
+      <header>
+        <h2 id="T3">The &lt;input&gt; Elements</h2>
+      </header>
+      <p>
+        One of the most used form element is the <span class="RedGray">&lt;input&gt;</span> element.
+        <br><br>
+        The <span class="RedGray">&lt;input&gt;</span> element can be displayed in several ways, depending on the type attribute.
+        <br><br>
+        All the different values of the <span class="RedGray">type</span> attribute are covered in the next chapter: <a href="https://www.w3schools.com/html/html_form_input_types.asp">HTML Input Types.</a>
+      </p>
+    </section><br><br>
+    <section>
+      <header>
+        <h2 id="T4">The HTML &lt;label&gt; Elements</h2>
+      </header>
+      <p>
+        The <span class="RedGray">&lt;label&gt;</span> element defines a label for several form elements.
+        <iframe src="http://127.0.0.1:5500/HTML/HTML%20Forms/01-html-forms.htm" width="900px" height="400px"frameborder="0"></iframe>
+      </p>
+    </section><br><br>
+    <section>
+      <header>
+        <h2 id="T5">The HTML &lt;select&gt; Elements</h2>
+      </header>
+      <p>
+        <br><br>
+        <!-- <div class="EX" style="width: 70vw"> -->
+          <label for="cars">Choose</label>
+          <select id="cars" name="cars" size="4" multiple>
+            <optgroup>CARLIST</optgroup>
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="fiat">Fiat</option>
+            <option value="audi">Audi</option>
+            <optgroup>HAMBURGER LIST</optgroup>
+            <option value="MCdonald">MCdonald</option>
+            <option value="BK">BK</option>
+          </select>
+        <!-- </div> -->
+        <br><br>
+        <div class="EX" style="width: 70vw">
+          &lt;label for="cars">Choose a car:&lt;/label&gt; <br>
+          &lt;select id="cars" name="cars" size="4" multiple&gt;<br>
+            &lt;optgroup&gt;CAR LIST&lt;/optgroup&gt;
+              &lt;option value="volvo">Volvo&lt;/option&gt;<br>
+              &lt;option value="saab">Saab&lt;/option&gt;<br>
+              &lt;option value="fiat">Fiat&lt;/option&gt;<br>
+              &lt;option value="audi">Audi&lt;/option&gt;<br>
+            &lt;optgroup&gt;HAMBURGER LIST&lt;/optgroup&gt;
+              &lt;option value="MCdonald">MCdonald&lt;/option&gt;<br>
+              &lt;option value="BK">BK&lt;/option&gt;<br>
+          &lt;/select&gt;
+        </div>
+        <br>
+        The <span class="RedGray">&lt;select&gt;</span> element defines a drop-down list
+        <br><br><br>
+        The <span class="RedGray">&lt;option&gt;</span> elements defines an option that can be selected.
+        <br><br>
+        By default, the first item in the drop-down list is selected.
+        <br><br>
+        To define a pre-selected option, add the selected attribute to the option.
+        <br><br>
+        The <span class="RedGray">&lt;optgroup&gt;</span> elements is used to define option group list.
+        <br>
+        <h4>Visible Values:</h3>
+        Use the <span class="RedGray">size</span> attribute to specify the number of visible values.
+        <br>
+        <h4>Allow Multiple Selections:</h3>
+        Use the <span class="RedGray">multiple</span> attribute to allow the user to select more than one value.
+        <br><br>
+        Hold down the Ctrl (windows) / Command (Mac) button to select multiple options.
+      </p>
+    </section><br><br>
+    <section>
+      <header>
+        <h2 id="T6">The &lt;textarea&gt; Elements</h2>
+      </header>
+      <p>
+        The <span class="RedGray">&lt;textarea&gt;</span> element defines a multi-line input field (a text area):
+        <br><br>
+        
+          <textarea name="message" rows="10" cols="30">
+          The cat was playing in the garden.
+          </textarea>
+        
+        <div class="EX" style="width:70vw">
+          &lt;textarea name="message" rows="10" cols="30"&gt; <br> 
+          The cat was playing in the garden. <br>
+          &lt;/textarea&gt; <br>
+        </div>
+        <br>
+        The <span class="RedGray">rows</span> attribute specifies the visible number of lines in a text area.
+        <br><br>
+        The <span class="RedGray">cols</span> attribute specifies the visible width of a text area.
+        <br><br>
+        You can also define the size of the text area by CSS.
+        <br><br>
+        <div class="EX" style="width:70vw">&lt;textarea name="message" style="width:200px; height:600px;"&gt;</div>
+      </p>
+    </section><br><br>
+    <section>
+      <header>
+        <h2 id="T7">The &lt;button&gt; Elements</h2>
+      </header>
+      <p>
+        The <span class="RedGray">&lt;button&gt;</span> element defines a clickable button:
+        <br><br>
+        <div class="EX" style="width:70vw">
+          &lt;button type="button" onclick="alert('Hello World!')"&gt;Click Me!&lt;/button&gt; 
+          </div><br>
+          
+          <button type="button" onclick="alert('Hello World!')">Click Me!</button>
+          <br><br>
+          <div class="TipBox"><strong>Note:</strong> Always specify the <span class="RedGray">type</span> attribute for the button element. Different browsers may use different default types for the
+          button element.</div>
+      </p>
+    </section><br><br>
+    <section>
+      <header>
+        <h2 id="T8">The &lt;fieldset&gt; and &lt;legend&gt; Elements</h2>
+      </header>
+      <p>
+        The <span class="RedGray">&lt;fieldset&gt;</span> element is used to group related data in a form.
+        <br><br>
+        The <span class="RedGray">&lt;legend&gt;</span> element defines a caption for the <span class="RedGray">&lt;fieldset&gt;</span> element.
+        <form action="/action_page.php">
+          <fieldset>
+            <legend>Personalia:</legend>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" value="John"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" value="Doe"><br><br>
+            <input type="submit" value="Submit">
+          </fieldset>
+          <div class="EX">
+            &lt;form action="/action_page.php"&gt;<br>
+            &nbsp;  &lt;fieldset&gt;<br>
+              &nbsp;&nbsp;  &lt;legend>Personalia:&lt;/legend&gt; <br>
+              &nbsp;&nbsp;  &lt;label for="fname">First name:&lt;/label&gt;<br>
+              &nbsp;&nbsp;  &lt;input type="text" id="fname" name="fname" value="John"&gt;<br>
+              &nbsp;&nbsp;  &lt;label for="lname">Last name:&lt;/label&gt;<br>
+              &nbsp;&nbsp;  &lt;input type="text" id="lname" name="lname" value="Doe"&gt;<br>
+              &nbsp;&nbsp;  &lt;input type="submit" value="Submit"&gt; <br>
+            &nbsp;  &lt;/fieldset&gt;<br>
+            &lt;/form&gt;<br>
+          </div>
+        </form>
+      </p>
+    </section><br><br>
+    <section>
+      <header>
+        <h2 id="T9">The &lt;datalist&gt; Elements</h2>
+      </header>
+      <p>
+        The <span class="RedGray">&lt;datalist&gt;</span> element specifies a list of pre-defined options for an <span class="RedGray">&lt;input&gt;</span> element.
+        <br><br>
+        Users will see a drop-down list of the pre-defined options as they input data.
+        <br><br>
+        The <span class="RedGray">list</span> attribute of the <span class="RedGray">&lt;input&gt;</span> element, must refer to the <span class="RedGray">id</span> attribute of the <span class="RedGray">&lt;datalist&gt;</span> element.
+          <form action="/action_page.php">
+            <input list="browsers" name="browser">
+            <datalist id="browsers">
+              <option value="Internet Explorer">
+              <option value="Firefox">
+              <option value="Chrome">
+              <option value="Opera">
+              <option value="Safari">
+            </datalist>
+            <input type="submit">
+          </form><br>
+          <div class="EX">
+            &lt;form action="/action_page.php"&gt;<br>
+            &nbsp; &lt;input list="browsers"&gt;<br>
+            &nbsp; &lt;datalist id="browsers" <br>
+            &nbsp;&nbsp; &lt;option value="Internet Explorer"&gt;<br>
+            &nbsp;&nbsp; &lt;option value="Firefox"&gt;<br>
+            &nbsp;&nbsp; &lt;option value="Chrome"&gt;<br>
+            &nbsp;&nbsp; &lt;option value="Opera"&gt;<br>
+            &nbsp;&nbsp; &lt;option value="Safari"&gt; <br>
+            &nbsp; &lt;/datalist&gt;<br>
+            &lt;/form&gt;<br>
+          </div>
+      </p>
+    </section><br><br>
+    <section>
+      <header>
+        <h2 id="T10">The &lt;output&gt; Elements</h2>
+      </header>
+      <p>
+        The <span class="RedGray">&lt;output&gt;</span> element represents the result of a calculation (like one performed by a script).
+        <br>
+        <form action="/action_page.php" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+          0
+          <input type="range" id="a" name="a" value="50">
+          100 +
+          <input type="number" id="b" name="b" value="50">
+          =
+          <output name="x" for="a b"></output>
+          <br><br>
+          <input type="submit">
+        </form>
+        <br>
+        <div class="EX">
+          &lt;form action="/action_page.php" oninput="x.value=parseInt(a.value)+parseInt(b.value)"&gt;<br>
+          &nbsp; 0 <br>
+          &nbsp; &lt;input type="range" id="a" name="a" value="50"&gt;<br>
+          &nbsp; 100 + <br>
+          &nbsp; &lt;input type="number" id="b" name="b" value="50"&gt; <br>
+          &nbsp; = <br>
+          &nbsp; &lt;output name="x" for="a b"&gt;&lt;/output&gt;<br>
+          &nbsp; &lt;br&gt;&lt;br&gt; <br>
+          &nbsp; &lt;input type="submit"&gt;<br>
+          &lt;/form&gt;<br>
+        </div>
+      </p>
+    </section>
+  </main>
+</body>
+
+</html>
